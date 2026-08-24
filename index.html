@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prapul Kumar ❤️ Sreeja Wedding</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #fff8e7, #f9dfaa);
+    color: #5b2118;
+    text-align: center;
+}
+
+/* Opening screen */
+
+#opening {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle,
+        #fff5d6,
+        #e8bd67,
+        #8b1e1e);
+
+    transition: 1s;
+}
+
+.opening-box {
+    padding: 30px;
+}
+
+.om {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.invited {
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.opening-names {
+    font-size: 38px;
+    color: #8b0000;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.open-button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+
+    background: #8b0000;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.open-button:hover {
+    background: #b8860b;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* Main */
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+}
+
+.card {
+    margin: 30px auto;
+
+    padding: 45px 25px;
+
+    background: rgba(255,255,255,.95);
+
+    border: 6px double #b8860b;
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 50px rgba(80,20,10,.25);
+}
+
+
+/* Ganesh */
+
+.ganesh {
+    font-size: 75px;
+    animation: float 3s infinite;
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* Heading */
+
+.heading {
+    margin-top: 15px;
+    letter-spacing: 4px;
+}
+
+.title {
+    font-size: 48px;
+    color: #9b111e;
+    margin: 20px 0;
+}
+
+
+/* Names */
+
+.names {
+    margin: 30px 0;
+}
+
+.name {
+    font-size: 44px;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+.and {
+    margin: 10px;
+    font-size: 22px;
+}
+
+.heart {
+    color: #d4af37;
+    font-size: 40px;
+
+    animation: heart 1.5s infinite;
+}
+
+@keyframes heart {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+}
+
+
+/* Photo */
+
+.photo {
+    width: 260px;
+    height: 260px;
+
+    margin: 30px auto;
+
+    border-radius: 50%;
+
+    border: 8px solid #b8860b;
+
+    padding: 6px;
+
+    overflow: hidden;
+
+    background: #f5e5c5;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* Divider */
+
+.divider {
+    width: 75%;
+    height: 2px;
+
+    margin: 30px auto;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #b8860b,
+            transparent
+        );
+}
+
+
+/* Date */
+
+.day {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.date {
+    margin: 10px 0;
+
+    font-size: 40px;
+
+    color: #9b111e;
+
+    font-weight: bold;
+}
+
+.time {
+    font-size: 23px;
+}
+
+
+/* Countdown */
+
+.countdown-title {
+    font-size: 25px;
+    color: #9b111e;
+
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 80px;
+
+    padding: 12px;
+
+    border: 2px solid #b8860b;
+
+    border-radius: 12px;
+
+    background: #fffaf0;
+}
+
+.number {
+    font-size: 27px;
+    font-weight: bold;
+    color: #9b111e;
+}
+
+.label {
+    font-size: 11px;
+}
+
+
+/* Venue */
+
+.venue-title {
+    font-size: 27px;
+    color: #9b111e;
+    font-weight: bold;
+}
+
+.venue {
+    font-size: 30px;
+    font-weight: bold;
+
+    margin: 12px 0;
+}
+
+.address {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.map {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: #9b111e;
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* Family */
+
+.family-title {
+    font-size: 27px;
+
+    color: #9b111e;
+
+    margin-bottom: 25px;
+}
+
+.family {
+    display: flex;
+    justify-content: center;
+
+    gap: 70px;
+
+    flex-wrap: wrap;
+}
+
+.family-heading {
+    color: #b8860b;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.family-name {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Music */
+
+.music {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #9b111e;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 500;
+}
+
+
+/* Falling flowers */
+
+.flower {
+    position: fixed;
+
+    top: -30px;
+
+    z-index: 200;
+
+    pointer-events: none;
+
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+
+    to {
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+    }
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px) {
+
+    .title {
+        font-size: 34px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+
+    .photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .opening-names {
+        font-size: 30px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     OPENING
+========================================== -->
+
+<div id="opening">
+
+    <div class="opening-box">
+
+        <div class="om">
+            🕉️
+        </div>
+
+        <div class="invited">
+            YOU ARE CORDIALLY INVITED
+        </div>
+
+        <div class="opening-names">
+            Prapul Kumar ❤️ Sreeja
+        </div>
+
+        <button
+            class="open-button"
+            onclick="openInvitation()">
+
+            ✨ TAP TO OPEN ✨
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ==========================================
+     MUSIC
+
+     LATER CHANGE wedding-song.mp3
+     TO YOUR MUSIC FILE NAME
+========================================== -->
+
+<audio
+    id="music"
+    loop>
+
+    <source
+        src="wedding-song.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- Music button -->
+
+<button
+    class="music"
+    onclick="toggleMusic()"
+    id="musicButton">
+
+    🎵
+
+</button>
+
+
+<!-- ==========================================
+     INVITATION
+========================================== -->
+
+<div class="container">
+
+<div class="card">
+
+
+<div class="ganesh">
+    🕉️
+</div>
+
+
+<div class="heading">
+    WITH THE BLESSINGS OF GOD
+</div>
+
+
+<div class="title">
+    Wedding Invitation
+</div>
+
+
+<p>
+    Together with their families
+</p>
+
+
+<div class="names">
+
+    <div class="name">
+        Prapul Kumar
+    </div>
+
+    <div class="and">
+        &
+    </div>
+
+    <div class="name">
+        Sreeja
+    </div>
+
+    <div class="heart">
+        ♥
+    </div>
+
+</div>
+
+
+<!-- ==========================================
+     PHOTO
+
+     PUT YOUR PHOTO IN SAME FOLDER
+     AND NAME IT:
+
+     couple-photo.jpg
+========================================== -->
+
+<div class="photo">
+
+    <img
+        src="couple-photo.jpg"
+        alt="Prapul Kumar and Sreeja"
+        onerror="
+        this.src='https://via.placeholder.com/500x500?text=Add+Couple+Photo';
+        "
+    >
+
+</div>
+
+
+<div class="divider"></div>
+
+
+<!-- DATE -->
+
+<div class="day">
+    SUNDAY
+</div>
+
+<div class="date">
+    30 AUGUST 2026
+</div>
+
+<div class="time">
+    11:09 AM
+</div>
+
+
+<div class="divider"></div>
+
+
+<!-- COUNTDOWN -->
+
+<div class="countdown-title">
+    💍 COUNTDOWN TO OUR WEDDING 💍
+</div>
+
+
+<div class="countdown">
+
+    <div class="box">
+
+        <div
+            class="number"
+            id="days">
+            00
+        </div>
+
+        <div class="label">
+            DAYS
+        </div>
+
+    </div>
+
+
+    <div class="box">
+
+        <div
+            class="number"
+            id="hours">
+            00
+        </div>
+
+        <div class="label">
+            HOURS
+        </div>
+
+    </div>
+
+
+    <div class="box">
+
+        <div
+            class="number"
+            id="minutes">
+            00
+        </div>
+
+        <div class="label">
+            MINUTES
+        </div>
+
+    </div>
+
+
+    <div class="box">
+
+        <div
+            class="number"
+            id="seconds">
+            00
+        </div>
+
+        <div class="label">
+            SECONDS
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="divider"></div>
+
+
+<!-- VENUE -->
+
+<div class="venue-title">
+    📍 WEDDING VENUE
+</div>
+
+
+<div class="venue">
+    Viola Garden
+</div>
+
+
+<div class="address">
+
+    Kushal Nagar,<br>
+
+    Hanamkonda Road,<br>
+
+    Siddipet – 502103
+
+</div>
+
+
+<a
+    class="map"
+    target="_blank"
+    href="https://www.google.com/maps/search/?api=1&query=Viola+Garden+Kushal+Nagar+Hanamkonda+Road+Siddipet+502103">
+
+    📍 Open Google Maps
+
+</a>
+
+
+<div class="divider"></div>
+
+
+<!-- FAMILY -->
+
+<div class="family-title">
+    With Love & Blessings From
+</div>
+
+
+<div class="family">
+
+
+<div>
+
+    <div class="family-heading">
+        Groom's Family
+    </div>
+
+    <div class="family-name">
+
+        Narender<br>
+        &<br>
+        Vijaya
+
+    </div>
+
+</div>
+
+
+<div>
+
+    <div class="family-heading">
+        Bride's Family
+    </div>
+
+    <div class="family-name">
+
+        Laxminarayana<br>
+        &<br>
+        Veeramani
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+<div class="divider"></div>
+
+
+<div style="
+font-size:19px;
+line-height:1.8;
+">
+
+    Your presence and blessings<br>
+    will make our special day<br>
+    truly memorable.
+
+    <br><br>
+
+    <strong style="
+    color:#9b111e;
+    font-size:27px;
+    ">
+
+        Prapul Kumar ❤️ Sreeja
+
+    </strong>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+
+/* ==========================================
+   OPEN INVITATION
+========================================== */
+
+function openInvitation() {
+
+    document
+        .getElementById("opening")
+        .classList
+        .add("hide");
+
+
+    const music =
+        document.getElementById("music");
+
+
+    music.play()
+        .then(() => {
+
+            document
+                .getElementById("musicButton")
+                .innerHTML = "⏸️";
+
+        })
+        .catch(() => {
+
+            console.log(
+                "Music could not autoplay"
+            );
+
+        });
+
+}
+
+
+/* ==========================================
+   MUSIC
+========================================== */
+
+function toggleMusic() {
+
+    const music =
+        document.getElementById("music");
+
+    const button =
+        document.getElementById("musicButton");
+
+
+    if (music.paused) {
+
+        music.play();
+
+        button.innerHTML = "⏸️";
+
+    }
+
+    else {
+
+        music.pause();
+
+        button.innerHTML = "🎵";
+
+    }
+
+}
+
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+const weddingDate =
+    new Date(
+        "August 30, 2026 11:09:00"
+    ).getTime();
+
+
+function countdown() {
+
+    const now =
+        new Date().getTime();
+
+    const difference =
+        weddingDate - now;
+
+
+    if (difference <= 0) {
+
+        document.getElementById("days")
+            .innerHTML = "00";
+
+        document.getElementById("hours")
+            .innerHTML = "00";
+
+        document.getElementById("minutes")
+            .innerHTML = "00";
+
+        document.getElementById("seconds")
+            .innerHTML = "00";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (difference /
+            (1000 * 60 * 60)) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (difference /
+            (1000 * 60)) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (difference / 1000) % 60
+        );
+
+
+    document.getElementById("days")
+        .innerHTML =
+        String(days).padStart(2, "0");
+
+
+    document.getElementById("hours")
+        .innerHTML =
+        String(hours).padStart(2, "0");
+
+
+    document.getElementById("minutes")
+        .innerHTML =
+        String(minutes).padStart(2, "0");
+
+
+    document.getElementById("seconds")
+        .innerHTML =
+        String(seconds).padStart(2, "0");
+
+}
+
+
+countdown();
+
+setInterval(
+    countdown,
+    1000
+);
+
+
+/* ==========================================
+   FALLING FLOWERS
+========================================== */
+
+const flowers = [
+    "🌸",
+    "🌺",
+    "🌼",
+    "🌹",
+    "💮"
+];
+
+
+function createFlower() {
+
+    const flower =
+        document.createElement("div");
+
+
+    flower.className =
+        "flower";
+
+
+    flower.innerHTML =
+        flowers[
+            Math.floor(
+                Math.random() *
+                flowers.length
+            )
+        ];
+
+
+    flower.style.left =
+        Math.random() * 100 + "vw";
+
+
+    flower.style.fontSize =
+        (15 + Math.random() * 20)
+        + "px";
+
+
+    flower.style.animationDuration =
+        (5 + Math.random() * 7)
+        + "s";
+
+
+    document.body.appendChild(
+        flower
+    );
+
+
+    setTimeout(
+        () => flower.remove(),
+        13000
+    );
+
+}
+
+
+setInterval(
+    createFlower,
+    700
+);
+
+
+</script>
+
+</body>
+</html>
