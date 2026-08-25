@@ -47,9 +47,7 @@
       content="1024">
 
 
-<!-- =====================================================
-     TWITTER / X PREVIEW
-===================================================== -->
+<!-- TWITTER / X -->
 
 <meta name="twitter:card"
       content="summary_large_image">
@@ -68,9 +66,12 @@
      FONTS
 ===================================================== -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
 
 <link
 href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Great+Vibes&display=swap"
@@ -161,7 +162,7 @@ body {
 
 
 /* =====================================================
-   OPENING FLORAL CORNERS
+   OPENING FLOWERS
 ===================================================== */
 
 .open-flower {
@@ -298,11 +299,6 @@ body {
     font-family:
         "Great Vibes",
         cursive;
-
-    /*
-       IMPORTANT:
-       Keeps Wedding Invitation on one line
-    */
 
     white-space: nowrap;
 
@@ -508,7 +504,7 @@ body {
 
 
 /* =====================================================
-   LIGHT CENTER EFFECT
+   LIGHT CENTER
 ===================================================== */
 
 .slide::after {
@@ -622,10 +618,6 @@ body {
     margin-top: 18px;
 
     line-height: 1;
-
-    /*
-       Keep title on one line
-    */
 
     white-space: nowrap;
 
@@ -922,7 +914,7 @@ body {
 
 
 /* =====================================================
-   MAP BUTTON
+   MAP
 ===================================================== */
 
 .map-button {
@@ -951,7 +943,7 @@ body {
 
 
 /* =====================================================
-   FAMILY
+   FAMILY TITLE
 ===================================================== */
 
 .family-title {
@@ -960,57 +952,59 @@ body {
         "Great Vibes",
         cursive;
 
-    font-size: 39px;
+    font-size: 42px;
 
     color: #76204f;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
 }
 
-.family-box {
 
-    display: inline-block;
+/* =====================================================
+   NEW FAMILY IMAGE
+===================================================== */
 
-    min-width: 250px;
+.family-image {
 
-    padding:
-        22px 35px;
+    width: 92%;
+
+    max-width: 520px;
+
+    margin: 8px auto 0;
+
+    padding: 7px;
 
     background:
-        rgba(255,255,255,.86);
+        rgba(255,255,255,.90);
 
     border:
         1px solid
-        rgba(150,110,160,.40);
+        rgba(170,125,47,.65);
 
     border-radius: 20px;
 
     box-shadow:
-        0 7px 20px
-        rgba(90,50,100,.08);
+        0 10px 30px
+        rgba(80,30,70,.16);
+
+    overflow: hidden;
 
 }
 
-.family-heading {
+.family-image img {
 
-    color: #a0762f;
+    width: 100%;
 
-    font-size: 18px;
+    height: auto;
 
-    font-weight: bold;
+    max-height: 58vh;
 
-    margin-bottom: 8px;
+    display: block;
 
-}
+    object-fit: contain;
 
-.family-names {
-
-    font-size: 20px;
-
-    line-height: 1.7;
-
-    color: #6b4056;
+    border-radius: 14px;
 
 }
 
@@ -1285,7 +1279,7 @@ body {
 
 
 /* =====================================================
-   REAL FALLING FLOWERS
+   FALLING FLOWERS
 ===================================================== */
 
 .falling-flower {
@@ -1402,10 +1396,6 @@ body {
 
     .open-title {
 
-        /*
-           Keep both words on SAME LINE
-        */
-
         font-size: 38px;
 
         white-space: nowrap;
@@ -1431,11 +1421,6 @@ body {
     }
 
     .script-title {
-
-        /*
-           Wedding Invitation remains
-           on one line
-        */
 
         font-size: 38px;
 
@@ -1466,6 +1451,28 @@ body {
     .venue {
 
         font-size: 40px;
+
+    }
+
+    .family-title {
+
+        font-size: 36px;
+
+    }
+
+    .family-image {
+
+        width: 94%;
+
+        max-width: 400px;
+
+        padding: 5px;
+
+    }
+
+    .family-image img {
+
+        max-height: 55vh;
 
     }
 
@@ -1540,6 +1547,12 @@ body {
 
     }
 
+    .family-title {
+
+        font-size: 32px;
+
+    }
+
 }
 
 </style>
@@ -1551,7 +1564,7 @@ body {
 
 
 <!-- =====================================================
-     OPENING PAGE
+     OPENING SCREEN
 ===================================================== -->
 
 <div id="opening">
@@ -1599,8 +1612,6 @@ body {
 
         </div>
 
-
-        <!-- SAME LINE -->
 
         <div class="open-title">
 
@@ -1682,34 +1693,25 @@ body {
 
 
     <!-- =================================================
-         PAGE 1
+         PAGE 1 — WELCOME
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
 
-
             <div class="om">
-
                 ॐ
-
             </div>
-
 
             <div class="sanskrit">
-
                 ॥ श्री गणेशाय नमः ॥
-
             </div>
-
 
             <div class="small-text">
 
@@ -1719,15 +1721,9 @@ body {
 
             </div>
 
-
-            <!-- SAME LINE -->
-
             <div class="script-title">
-
                 Wedding Invitation
-
             </div>
-
 
             <div class="small-text">
 
@@ -1737,34 +1733,21 @@ body {
 
             </div>
 
-
             <div class="big-name">
-
                 Prapul Kumar
-
             </div>
-
 
             <div class="and-text">
-
                 — and —
-
             </div>
-
 
             <div class="big-name">
-
                 Sreeja
-
             </div>
-
 
             <div class="heart">
-
                 ❤️
-
             </div>
-
 
         </div>
 
@@ -1772,27 +1755,21 @@ body {
 
 
     <!-- =================================================
-         PAGE 2
+         PAGE 2 — COUPLE
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
 
-
             <div class="script-title">
-
                 Together Forever
-
             </div>
-
 
             <div class="small-text">
 
@@ -1802,7 +1779,6 @@ body {
 
             </div>
 
-
             <div class="photo">
 
                 <img
@@ -1811,27 +1787,17 @@ body {
 
             </div>
 
-
             <div class="big-name">
-
                 Prapul Kumar
-
             </div>
-
 
             <div class="and-text">
-
                 ❤️
-
             </div>
-
 
             <div class="big-name">
-
                 Sreeja
-
             </div>
-
 
         </div>
 
@@ -1839,27 +1805,21 @@ body {
 
 
     <!-- =================================================
-         PAGE 3
+         PAGE 3 — DATE
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
 
-
             <div class="script-title">
-
                 Save The Date
-
             </div>
-
 
             <div class="small-text">
 
@@ -1869,37 +1829,23 @@ body {
 
             </div>
 
-
             <div class="date-label">
-
                 SUNDAY
-
             </div>
-
 
             <div class="date">
-
                 30 AUGUST 2026
-
             </div>
-
 
             <div class="time">
-
                 ✦ MUHURTHAM : 11:09 AM ✦
-
             </div>
-
 
             <div class="countdown-title">
-
                 Our Special Day
-
             </div>
 
-
             <div class="countdown">
-
 
                 <div class="count-box">
 
@@ -1912,9 +1858,7 @@ body {
                     </div>
 
                     <div class="count-label">
-
                         DAYS
-
                     </div>
 
                 </div>
@@ -1931,9 +1875,7 @@ body {
                     </div>
 
                     <div class="count-label">
-
                         HOURS
-
                     </div>
 
                 </div>
@@ -1950,9 +1892,7 @@ body {
                     </div>
 
                     <div class="count-label">
-
                         MINUTES
-
                     </div>
 
                 </div>
@@ -1969,16 +1909,12 @@ body {
                     </div>
 
                     <div class="count-label">
-
                         SECONDS
-
                     </div>
 
                 </div>
 
-
             </div>
-
 
         </div>
 
@@ -1986,34 +1922,25 @@ body {
 
 
     <!-- =================================================
-         PAGE 4
+         PAGE 4 — VENUE
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
 
-
             <div class="venue-title">
-
                 ✦ Wedding Venue ✦
-
             </div>
-
 
             <div class="venue">
-
                 Viola Garden
-
             </div>
-
 
             <div class="address">
 
@@ -2025,19 +1952,15 @@ body {
 
             </div>
 
-
             <a
                 class="map-button"
-
                 href="https://www.google.com/maps/search/?api=1&query=Viola+Garden+Kushal+Nagar+Hanamkonda+Road+Siddipet+502103"
-
                 target="_blank"
                 rel="noopener">
 
                 📍 Open Google Maps
 
             </a>
-
 
             <div
                 class="small-text"
@@ -2051,27 +1974,23 @@ body {
 
             </div>
 
-
         </div>
 
     </section>
 
 
     <!-- =================================================
-         PAGE 5
+         PAGE 5 — WITH LOVE & BLESSINGS
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
-
 
             <div class="family-title">
 
@@ -2080,26 +1999,13 @@ body {
             </div>
 
 
-            <div class="family-box">
+            <!-- NEW IMAGE -->
 
+            <div class="family-image">
 
-                <div class="family-heading">
-
-                    Groom's Family
-
-                </div>
-
-
-                <div class="family-names">
-
-                    Sri Narender
-                    <br>
-                    &
-                    <br>
-                    Smt. Vijaya
-
-                </div>
-
+                <img
+                    src="file_000000005c3c82119bfc73425bedac19.png"
+                    alt="With Love and Blessings From">
 
             </div>
 
@@ -2114,34 +2020,27 @@ body {
 
             </div>
 
-
         </div>
 
     </section>
 
 
     <!-- =================================================
-         PAGE 6
+         PAGE 6 — CONTACT
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
 
-
             <div class="contact-title">
-
                 Contact
-
             </div>
-
 
             <div class="small-text">
 
@@ -2151,7 +2050,6 @@ body {
 
             </div>
 
-
             <a
                 class="contact-card"
                 href="tel:9885114423">
@@ -2159,7 +2057,6 @@ body {
                 📱 &nbsp; 9885114423
 
             </a>
-
 
             <a
                 class="contact-card"
@@ -2169,41 +2066,31 @@ body {
 
             </a>
 
-
         </div>
 
     </section>
 
 
     <!-- =================================================
-         PAGE 7
+         PAGE 7 — THANK YOU
     ================================================== -->
 
     <section class="slide">
-
 
         <img
             class="slide-bg"
             src="purple-floral-background.png"
             alt="">
 
-
         <div class="content">
 
-
             <div class="final-heart">
-
                 ❤️
-
             </div>
-
 
             <div class="script-title">
-
                 Thank You
-
             </div>
-
 
             <div class="final-text">
 
@@ -2231,13 +2118,11 @@ body {
 
             </div>
 
-
             <div class="final-names">
 
                 Prapul Kumar ❤️ Sreeja
 
             </div>
-
 
         </div>
 
@@ -2414,10 +2299,6 @@ function stopMusic() {
 }
 
 
-/*
-   Works when browser tab/app is hidden.
-*/
-
 document.addEventListener(
     "visibilitychange",
     function() {
@@ -2435,15 +2316,11 @@ document.addEventListener(
 );
 
 
-/*
-   Works when navigating away
-   or closing the page.
-*/
-
 window.addEventListener(
     "pagehide",
     stopMusic
 );
+
 
 window.addEventListener(
     "beforeunload",
@@ -2469,7 +2346,6 @@ function goToSlide(index) {
             slides.length - 1;
 
     }
-
 
     currentSlide = index;
 
@@ -2635,7 +2511,6 @@ function updateCountdown() {
     const now =
         new Date().getTime();
 
-
     const difference =
         weddingDate - now;
 
@@ -2729,6 +2604,7 @@ function updateCountdown() {
 
 updateCountdown();
 
+
 setInterval(
     updateCountdown,
     1000
@@ -2750,7 +2626,7 @@ slider.addEventListener(
 
         touchStartX =
             event.changedTouches[0]
-            .screenX;
+                .screenX;
 
     },
     {
@@ -2765,7 +2641,7 @@ slider.addEventListener(
 
         touchEndX =
             event.changedTouches[0]
-            .screenX;
+                .screenX;
 
         handleSwipe();
 
@@ -2808,7 +2684,7 @@ function handleSwipe() {
 
 
 /* =====================================================
-   REAL FLOWER FALLING
+   REALISTIC FALLING FLOWERS
 ===================================================== */
 
 const flowerImages = [
@@ -2915,11 +2791,8 @@ for (
 ) {
 
     setTimeout(
-
         createRealFlower,
-
         i * 350
-
     );
 
 }
@@ -2928,11 +2801,8 @@ for (
 /* Continue flowers */
 
 setInterval(
-
     createRealFlower,
-
     700
-
 );
 
 
