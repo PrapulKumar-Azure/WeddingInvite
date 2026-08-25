@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -9,12 +8,11 @@
       content="width=device-width, initial-scale=1.0">
 
 <meta name="theme-color"
-      content="#fff8ed">
+      content="#fffaf2">
 
 <title>
 Prapul Kumar ❤️ Sreeja | Wedding Invitation
 </title>
-
 
 <style>
 
@@ -23,9 +21,9 @@ Prapul Kumar ❤️ Sreeja | Wedding Invitation
 ===================================================== */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -39,17 +37,17 @@ body {
         "Times New Roman",
         serif;
 
-    color: #64243a;
+    color: #633044;
 
-    background-color: #fffaf1;
+    background: #fffaf2;
 
     overflow-x: hidden;
 }
 
 
 /* =====================================================
-   OPENING SCREEN
-   USES YOUR FLORAL INVITATION IMAGE
+   OPENING PAGE
+   LIGHT FLORAL WEDDING DESIGN
 ===================================================== */
 
 #opening {
@@ -62,30 +60,24 @@ body {
 
     display: flex;
 
-    align-items: center;
-
     justify-content: center;
 
-    background-color: #fffaf1;
+    align-items: center;
 
-    background-image:
-        url("opening-background.png");
+    overflow: hidden;
 
-    background-repeat: no-repeat;
+    background:
 
-    background-position: center center;
-
-    /*
-       This makes the complete invitation
-       artwork fit the phone screen.
-    */
-
-    background-size: contain;
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.98) 0%,
+            rgba(255,251,240,0.97) 48%,
+            rgba(250,239,216,0.96) 100%
+        );
 
     transition:
         opacity 1.2s ease,
         visibility 1.2s ease;
-
 }
 
 
@@ -96,71 +88,383 @@ body {
     opacity: 0;
 
     visibility: hidden;
+}
+
+
+/* =====================================================
+   OPENING FLORAL DECORATIONS
+===================================================== */
+
+.opening-flower {
+
+    position: absolute;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    opacity: 0.92;
+
+}
+
+
+/* Top left */
+
+.flower-tl {
+
+    top: -30px;
+
+    left: -25px;
+
+    font-size: 110px;
+
+    transform: rotate(-15deg);
+}
+
+
+/* Top right */
+
+.flower-tr {
+
+    top: -25px;
+
+    right: -25px;
+
+    font-size: 105px;
+
+    transform: rotate(15deg);
+}
+
+
+/* Bottom left */
+
+.flower-bl {
+
+    bottom: -30px;
+
+    left: -20px;
+
+    font-size: 115px;
+
+    transform: rotate(20deg);
+}
+
+
+/* Bottom right */
+
+.flower-br {
+
+    bottom: -25px;
+
+    right: -20px;
+
+    font-size: 115px;
+
+    transform: rotate(-20deg);
+}
+
+
+/* =====================================================
+   EXTRA FLOWERS
+===================================================== */
+
+.small-flower {
+
+    position: absolute;
+
+    pointer-events: none;
+
+    opacity: 0.65;
+
+}
+
+
+.sf1 {
+
+    top: 18%;
+
+    left: 4%;
+
+    font-size: 34px;
+
+}
+
+
+.sf2 {
+
+    top: 30%;
+
+    right: 5%;
+
+    font-size: 30px;
+
+}
+
+
+.sf3 {
+
+    bottom: 25%;
+
+    left: 6%;
+
+    font-size: 32px;
+
+}
+
+
+.sf4 {
+
+    bottom: 17%;
+
+    right: 5%;
+
+    font-size: 35px;
 
 }
 
 
 /* =====================================================
-   OPENING CLICK AREA
-
-   The actual "TAP TO OPEN" is already
-   present inside opening-background.png.
-
-   This transparent button sits over it.
+   OPENING CONTENT
 ===================================================== */
 
-.opening-box {
+.opening-content {
 
-    position: absolute;
+    position: relative;
 
-    inset: 0;
+    z-index: 10;
 
-    width: 100%;
+    width: 90%;
 
-    height: 100%;
+    max-width: 600px;
+
+    padding: 30px 20px;
+
+    text-align: center;
 
 }
 
 
-/* Transparent button */
+/* Gold top decoration */
+
+.opening-decoration {
+
+    color: #b8944d;
+
+    font-size: 28px;
+
+    letter-spacing: 8px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Om */
+
+.opening-om {
+
+    font-size: 65px;
+
+    color: #b28a3e;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Blessing */
+
+.opening-blessing {
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    color: #765064;
+
+    line-height: 1.7;
+
+}
+
+
+/* Hindi */
+
+.opening-hindi {
+
+    margin-top: 12px;
+
+    font-size: 20px;
+
+    color: #8d6a32;
+
+}
+
+
+/* Main title */
+
+.opening-title {
+
+    margin-top: 20px;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 46px;
+
+    font-weight: normal;
+
+    color: #762541;
+
+    line-height: 1.2;
+}
+
+
+/* Names */
+
+.opening-names {
+
+    margin-top: 24px;
+
+    color: #762541;
+}
+
+
+/*
+   Elegant script font
+*/
+
+.opening-groom,
+.opening-bride {
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 46px;
+
+    font-weight: normal;
+
+}
+
+
+.opening-and {
+
+    margin: 3px 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    color: #b28a3e;
+
+    font-style: italic;
+}
+
+
+/* Heart */
+
+.opening-heart {
+
+    margin-top: 5px;
+
+    color: #b28a3e;
+
+    font-size: 27px;
+
+    animation:
+        softHeart 2s infinite;
+}
+
+
+@keyframes softHeart {
+
+    0%,100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.12);
+
+    }
+}
+
+
+/* Date */
+
+.opening-date {
+
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    color: #765064;
+}
+
+
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
 
 .open-button {
 
-    position: absolute;
+    margin-top: 28px;
 
-    left: 50%;
+    padding:
+        13px 34px;
 
-    top: 83%;
+    border:
+        1px solid #b8944d;
 
-    transform:
-        translate(-50%, -50%);
-
-    width: 45%;
-
-    max-width: 430px;
-
-    height: 75px;
-
-    border: none;
-
-    border-radius: 50px;
+    border-radius:
+        30px;
 
     background:
-        rgba(255,255,255,0.01);
+        #7b2947;
 
-    color: transparent;
+    color:
+        white;
 
-    cursor: pointer;
+    font-family:
+        Georgia,
+        serif;
 
-    font-size: 0;
+    font-size:
+        14px;
 
-    outline: none;
+    letter-spacing:
+        1px;
 
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 5px 18px
+        rgba(100,40,60,0.18);
+
+    transition:
+        .3s;
+}
+
+
+.open-button:hover {
+
+    background:
+        #a67d38;
+
+    transform:
+        scale(1.04);
 }
 
 
 /* =====================================================
-   MAIN PAGE
+   MAIN INVITATION
 ===================================================== */
 
 .container {
@@ -168,17 +472,10 @@ body {
     width: 100%;
 
     min-height: 100vh;
-
-    margin: 0;
-
-    padding: 0;
-
 }
 
 
-/* =====================================================
-   INVITATION BACKGROUND
-===================================================== */
+/* Main page */
 
 .card {
 
@@ -188,59 +485,34 @@ body {
 
     min-height: 100vh;
 
-    margin: 0;
-
     padding:
         55px 12% 70px;
 
     text-align: center;
 
-    background-color: #fffaf1;
+    background:
 
-    background-image:
+        linear-gradient(
+            rgba(255,250,240,0.82),
+            rgba(255,250,240,0.82)
+        ),
+
         url("wedding-floral-background.png");
 
-    background-repeat: no-repeat;
+    background-position:
+        center top;
 
-    background-position: center top;
+    background-size:
+        cover;
 
-    background-size: cover;
+    background-repeat:
+        no-repeat;
 
-    background-attachment: fixed;
+    background-attachment:
+        fixed;
 
-    overflow: hidden;
-
-}
-
-
-/* Very light cream layer */
-
-.card::after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        rgba(255,250,240,0.18);
-
-    pointer-events: none;
-
-    z-index: 0;
-
-}
-
-
-/* All actual content stays above overlay */
-
-.card > * {
-
-    position: relative;
-
-    z-index: 1;
-
+    overflow:
+        hidden;
 }
 
 
@@ -258,81 +530,29 @@ body {
 
     border:
         1px solid
-        rgba(181,145,65,0.38);
+        rgba(181,145,65,0.35);
 
-    pointer-events: none;
-
-    z-index: 2;
-
+    pointer-events:
+        none;
 }
 
 
 /* =====================================================
-   DECORATIVE CORNERS
-===================================================== */
-
-.corner {
-
-    position: absolute;
-
-    color:
-        rgba(174,130,50,0.55);
-
-    font-size: 30px;
-
-    z-index: 3 !important;
-
-}
-
-.corner.tl {
-
-    top: 20px;
-
-    left: 25px;
-
-}
-
-.corner.tr {
-
-    top: 20px;
-
-    right: 25px;
-
-}
-
-.corner.bl {
-
-    bottom: 20px;
-
-    left: 25px;
-
-}
-
-.corner.br {
-
-    bottom: 20px;
-
-    right: 25px;
-
-}
-
-
-/* =====================================================
-   GANESH
+   MAIN CONTENT
 ===================================================== */
 
 .ganesh {
 
+    position: relative;
+
     font-size: 68px;
 
-    color: #ad8130;
+    color: #ae8232;
 
     animation:
-        gentleFloat 4s
-        ease-in-out
-        infinite;
-
+        gentleFloat 4s ease-in-out infinite;
 }
+
 
 @keyframes gentleFloat {
 
@@ -353,11 +573,11 @@ body {
 }
 
 
-/* =====================================================
-   INTRO TEXT
-===================================================== */
+/* Heading */
 
 .heading {
+
+    position: relative;
 
     margin-top: 10px;
 
@@ -366,11 +586,12 @@ body {
     letter-spacing: 3px;
 
     color: #754456;
-
 }
 
 
 .subtitle {
+
+    position: relative;
 
     margin-top: 12px;
 
@@ -381,31 +602,37 @@ body {
     color: #704654;
 
     font-style: italic;
-
 }
 
 
 .title {
 
+    position: relative;
+
     margin: 20px 0;
 
-    font-size: 44px;
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
 
-    color: #762541;
+    font-size: 48px;
 
     font-weight: normal;
 
+    color: #762541;
 }
 
 
 .intro-text {
+
+    position: relative;
 
     font-size: 15px;
 
     line-height: 1.8;
 
     color: #704654;
-
 }
 
 
@@ -415,34 +642,36 @@ body {
 
 .names {
 
-    margin: 28px 0;
+    position: relative;
 
+    margin: 28px 0;
 }
 
 
 .name {
 
-    font-size: 48px;
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 50px;
 
     color: #762541;
 
     font-weight: normal;
-
-    letter-spacing: 1px;
-
 }
 
 
 .and {
 
-    margin: 6px;
+    margin: 5px;
 
-    font-size: 22px;
+    font-size: 20px;
 
-    color: #ad8130;
+    color: #ae8232;
 
     font-style: italic;
-
 }
 
 
@@ -450,40 +679,19 @@ body {
 
     margin-top: 8px;
 
-    font-size: 30px;
+    font-size: 28px;
 
-    color: #ad8130;
-
-    animation:
-        heartbeat 2s
-        infinite;
-
-}
-
-@keyframes heartbeat {
-
-    0%,100% {
-
-        transform:
-            scale(1);
-
-    }
-
-    50% {
-
-        transform:
-            scale(1.12);
-
-    }
-
+    color: #ae8232;
 }
 
 
 /* =====================================================
-   COUPLE PHOTO
+   PHOTO
 ===================================================== */
 
 .photo {
+
+    position: relative;
 
     width: 235px;
 
@@ -494,8 +702,7 @@ body {
     padding: 5px;
 
     border:
-        1px solid
-        #b89a57;
+        1px solid #b89a57;
 
     border-radius: 50%;
 
@@ -505,9 +712,8 @@ body {
     overflow: hidden;
 
     box-shadow:
-        0 6px 20px
-        rgba(70,25,35,0.13);
-
+        0 5px 18px
+        rgba(80,25,40,0.12);
 }
 
 
@@ -520,7 +726,6 @@ body {
     object-fit: cover;
 
     border-radius: 50%;
-
 }
 
 
@@ -537,13 +742,13 @@ body {
     margin: 28px auto;
 
     background:
+
         linear-gradient(
             to right,
             transparent,
             rgba(174,130,50,0.70),
             transparent
         );
-
 }
 
 
@@ -558,7 +763,6 @@ body {
     letter-spacing: 5px;
 
     color: #704050;
-
 }
 
 
@@ -569,9 +773,6 @@ body {
     font-size: 39px;
 
     color: #762541;
-
-    font-weight: normal;
-
 }
 
 
@@ -582,7 +783,6 @@ body {
     color: #80505d;
 
     letter-spacing: 1px;
-
 }
 
 
@@ -597,7 +797,6 @@ body {
     font-size: 20px;
 
     color: #762541;
-
 }
 
 
@@ -610,7 +809,6 @@ body {
     gap: 8px;
 
     flex-wrap: wrap;
-
 }
 
 
@@ -628,7 +826,6 @@ body {
 
     background:
         rgba(255,255,255,0.60);
-
 }
 
 
@@ -637,7 +834,6 @@ body {
     font-size: 23px;
 
     color: #762541;
-
 }
 
 
@@ -650,7 +846,6 @@ body {
     letter-spacing: 1px;
 
     color: #80505d;
-
 }
 
 
@@ -665,7 +860,6 @@ body {
     color: #8a6330;
 
     letter-spacing: 2px;
-
 }
 
 
@@ -676,7 +870,6 @@ body {
     font-size: 30px;
 
     color: #762541;
-
 }
 
 
@@ -687,13 +880,8 @@ body {
     line-height: 1.7;
 
     color: #704654;
-
 }
 
-
-/* =====================================================
-   MAP BUTTON
-===================================================== */
 
 .map {
 
@@ -704,8 +892,7 @@ body {
     padding: 10px 24px;
 
     border:
-        1px solid
-        #b89a57;
+        1px solid #b89a57;
 
     border-radius: 25px;
 
@@ -717,16 +904,6 @@ body {
     text-decoration: none;
 
     font-size: 14px;
-
-    transition: .3s;
-
-}
-
-
-.map:hover {
-
-    background: #f4e9d1;
-
 }
 
 
@@ -741,7 +918,6 @@ body {
     font-size: 21px;
 
     color: #762541;
-
 }
 
 
@@ -754,14 +930,12 @@ body {
     gap: 70px;
 
     flex-wrap: wrap;
-
 }
 
 
 .family-box {
 
     min-width: 200px;
-
 }
 
 
@@ -772,7 +946,6 @@ body {
     font-size: 16px;
 
     color: #ae8232;
-
 }
 
 
@@ -783,7 +956,6 @@ body {
     line-height: 1.6;
 
     color: #704654;
-
 }
 
 
@@ -798,7 +970,6 @@ body {
     font-size: 21px;
 
     color: #762541;
-
 }
 
 
@@ -811,7 +982,6 @@ body {
     gap: 12px;
 
     flex-wrap: wrap;
-
 }
 
 
@@ -838,21 +1008,6 @@ body {
 
     font-size:
         15px;
-
-    transition:
-        .3s;
-
-}
-
-
-.contact:hover {
-
-    background:
-        #762541;
-
-    color:
-        white;
-
 }
 
 
@@ -862,29 +1017,26 @@ body {
 
 .footer {
 
-    font-size:
-        17px;
+    font-size: 17px;
 
-    line-height:
-        1.8;
+    line-height: 1.8;
 
-    color:
-        #704654;
-
+    color: #704654;
 }
 
 
 .footer-names {
 
-    margin-top:
-        15px;
+    margin-top: 15px;
 
-    font-size:
-        28px;
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
 
-    color:
-        #762541;
+    font-size: 32px;
 
+    color: #762541;
 }
 
 
@@ -894,26 +1046,20 @@ body {
 
 .music {
 
-    position:
-        fixed;
+    position: fixed;
 
-    right:
-        18px;
+    right: 18px;
 
-    bottom:
-        18px;
+    bottom: 18px;
 
-    width:
-        52px;
+    width: 52px;
 
-    height:
-        52px;
+    height: 52px;
 
     border:
         1px solid #b89a57;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
     background:
         rgba(255,250,238,0.92);
@@ -933,34 +1079,27 @@ body {
     box-shadow:
         0 4px 14px
         rgba(0,0,0,0.12);
-
 }
 
 
 /* =====================================================
-   FALLING FLOWERS
+   FALLING PETALS
 ===================================================== */
 
 .flower {
 
-    position:
-        fixed;
+    position: fixed;
 
-    top:
-        -30px;
+    top: -30px;
 
-    z-index:
-        200;
+    z-index: 200;
 
-    pointer-events:
-        none;
+    pointer-events: none;
 
-    opacity:
-        0.50;
+    opacity: 0.45;
 
     animation:
         fall linear forwards;
-
 }
 
 
@@ -973,7 +1112,6 @@ body {
             rotate(360deg);
 
     }
-
 }
 
 
@@ -983,57 +1121,116 @@ body {
 
 @media(max-width:600px) {
 
-
-    /* Opening image */
-
     #opening {
 
-        background-size:
-            100% auto;
-
-        background-position:
-            center center;
-
+        background:
+            radial-gradient(
+                circle at center,
+                #ffffff 0%,
+                #fffaf0 55%,
+                #f9eed8 100%
+            );
     }
 
 
-    .open-button {
+    .opening-flower {
+
+        opacity:
+            0.88;
+    }
+
+
+    .flower-tl {
+
+        font-size:
+            85px;
+
+        left:
+            -25px;
 
         top:
-            82%;
-
-        width:
-            55%;
-
-        height:
-            70px;
-
+            -20px;
     }
 
 
-    /* Main page */
+    .flower-tr {
+
+        font-size:
+            80px;
+
+        right:
+            -20px;
+
+        top:
+            -15px;
+    }
+
+
+    .flower-bl {
+
+        font-size:
+            90px;
+
+        left:
+            -20px;
+
+        bottom:
+            -25px;
+    }
+
+
+    .flower-br {
+
+        font-size:
+            90px;
+
+        right:
+            -20px;
+
+        bottom:
+            -20px;
+    }
+
+
+    .opening-title {
+
+        font-size:
+            39px;
+    }
+
+
+    .opening-groom,
+    .opening-bride {
+
+        font-size:
+            39px;
+    }
+
+
+    .opening-content {
+
+        padding:
+            20px 12px;
+    }
+
+
+    .opening-om {
+
+        font-size:
+            58px;
+    }
+
 
     .card {
 
         padding:
             45px 18px 55px;
 
-        background-size:
-            auto 100%;
-
-        background-position:
-            center top;
-
         background-attachment:
             scroll;
 
-    }
-
-
-    .card::before {
-
-        inset:
-            10px;
+        background-size:
+            auto 100%;
 
     }
 
@@ -1041,16 +1238,14 @@ body {
     .title {
 
         font-size:
-            33px;
-
+            38px;
     }
 
 
     .name {
 
         font-size:
-            37px;
-
+            41px;
     }
 
 
@@ -1058,7 +1253,6 @@ body {
 
         font-size:
             30px;
-
     }
 
 
@@ -1069,15 +1263,6 @@ body {
 
         height:
             210px;
-
-    }
-
-
-    .opening-names {
-
-        font-size:
-            30px;
-
     }
 
 
@@ -1085,7 +1270,6 @@ body {
 
         gap:
             25px;
-
     }
 
 }
@@ -1097,37 +1281,32 @@ body {
 
 @media(max-width:380px) {
 
+    .opening-title {
 
-    .open-button {
-
-        top:
-            82%;
-
-        width:
-            60%;
-
-        height:
-            60px;
-
+        font-size:
+            34px;
     }
 
 
-    .card {
+    .opening-groom,
+    .opening-bride {
 
-        padding-left:
+        font-size:
+            34px;
+    }
+
+
+    .opening-blessing {
+
+        font-size:
             12px;
-
-        padding-right:
-            12px;
-
     }
 
 
     .name {
 
         font-size:
-            32px;
-
+            35px;
     }
 
 
@@ -1135,15 +1314,6 @@ body {
 
         font-size:
             27px;
-
-    }
-
-
-    .title {
-
-        font-size:
-            30px;
-
     }
 
 }
@@ -1157,34 +1327,148 @@ body {
 
 
 <!-- =====================================================
-     PREMIUM OPENING PAGE
-     
-     The entire first page is the generated
-     floral invitation image.
+     OPENING SCREEN
 ===================================================== -->
 
 <div id="opening">
 
-    <div class="opening-box">
 
-        <!--
+    <!-- Decorative flowers -->
 
-        The visible TAP TO OPEN button is already
-        inside opening-background.png.
+    <div class="opening-flower flower-tl">
+        🌸🌿
+    </div>
 
-        This transparent button is placed over it
-        to make it clickable.
 
-        -->
+    <div class="opening-flower flower-tr">
+        🌺🌿
+    </div>
+
+
+    <div class="opening-flower flower-bl">
+        🌷🌿
+    </div>
+
+
+    <div class="opening-flower flower-br">
+        🌸🌿
+    </div>
+
+
+    <div class="small-flower sf1">
+        🌼
+    </div>
+
+
+    <div class="small-flower sf2">
+        🌸
+    </div>
+
+
+    <div class="small-flower sf3">
+        🌺
+    </div>
+
+
+    <div class="small-flower sf4">
+        🌼
+    </div>
+
+
+    <!-- Main opening content -->
+
+    <div class="opening-content">
+
+
+        <div class="opening-decoration">
+            ❈ ❈ ❈
+        </div>
+
+
+        <div class="opening-om">
+            🕉️
+        </div>
+
+
+        <div class="opening-blessing">
+
+            WITH THE BLESSINGS OF ALMIGHTY
+            <br>
+
+            AND OUR BELOVED ELDERS
+
+        </div>
+
+
+        <div class="opening-hindi">
+
+            ॥ श्री गणेशाय नमः ॥
+
+        </div>
+
+
+        <div class="opening-title">
+
+            Wedding Invitation
+
+        </div>
+
+
+        <div class="opening-names">
+
+
+            <div class="opening-groom">
+
+                Prapul Kumar
+
+            </div>
+
+
+            <div class="opening-and">
+
+                &
+
+            </div>
+
+
+            <div class="opening-bride">
+
+                Sreeja
+
+            </div>
+
+
+            <div class="opening-heart">
+
+                ♥️
+
+            </div>
+
+
+        </div>
+
+
+        <div class="opening-date">
+
+            SUNDAY · 30 AUGUST 2026
+
+            <br>
+
+            MUHURTHAM · 11:09 AM
+
+        </div>
+
+
+        <!-- Open button -->
 
         <button
             class="open-button"
-            onclick="openInvitation()"
-            aria-label="Tap to open wedding invitation">
+            onclick="openInvitation()">
 
-            TAP TO OPEN
+            ✨ TAP TO OPEN ✨
 
         </button>
+
 
     </div>
 
@@ -1192,13 +1476,9 @@ body {
 
 
 <!-- =====================================================
-     WEDDING MUSIC
+     MUSIC
 
-     Put your music file in the repository.
-
-     Recommended filename:
-     wedding-song.mp3
-
+     EXACT FILE NAME PROVIDED BY YOU
 ===================================================== -->
 
 <audio
@@ -1206,21 +1486,18 @@ body {
     loop>
 
     <source
-        src="wedding-song.mp3"
+        src="Trim_PRAPUL- SRIJA KALYANAME MASTER 01_1.mp3"
         type="audio/mpeg">
 
 </audio>
 
 
-<!-- =====================================================
-     MUSIC CONTROL
-===================================================== -->
+<!-- Music control -->
 
 <button
     class="music"
     id="musicButton"
-    onclick="toggleMusic()"
-    aria-label="Play or pause music">
+    onclick="toggleMusic()">
 
     🎵
 
@@ -1237,27 +1514,8 @@ body {
 <div class="card">
 
 
-<!-- Decorative corners -->
-
-<div class="corner tl">
-    ❈
-</div>
-
-<div class="corner tr">
-    ❈
-</div>
-
-<div class="corner bl">
-    ❈
-</div>
-
-<div class="corner br">
-    ❈
-</div>
-
-
 <!-- =====================================================
-     GANESH
+     MAIN GANESH
 ===================================================== -->
 
 <div class="ganesh">
@@ -1278,14 +1536,11 @@ body {
 
     With the blessings of Almighty
     <br>
+
     and our beloved elders
 
 </div>
 
-
-<!-- =====================================================
-     TITLE
-===================================================== -->
 
 <div class="title">
 
@@ -1298,6 +1553,7 @@ body {
 
     YOU ARE CORDIALLY INVITED TO
     <br>
+
     THE WEDDING CEREMONY OF
 
 </div>
@@ -1333,7 +1589,7 @@ body {
 
     <div class="heart">
 
-        ♥
+        ♥️
 
     </div>
 
@@ -1344,8 +1600,7 @@ body {
 <!-- =====================================================
      COUPLE PHOTO
 
-     Upload your photo as:
-
+     Upload as:
      couple-photo.jpg
 
 ===================================================== -->
@@ -1355,6 +1610,7 @@ body {
 
     <img
         src="couple-photo.jpg"
+
         alt="Prapul Kumar and Sreeja"
 
         onerror="
@@ -1362,6 +1618,7 @@ body {
         this.parentElement.innerHTML=
         '<span style=\'color:#8b5d24;font-size:14px\'>Add Couple Photo</span>';
         ">
+
 
 </div>
 
@@ -1730,43 +1987,31 @@ function openInvitation() {
         document.getElementById("music");
 
 
-    /*
-       Browser allows music more reliably
-       because this function is triggered
-       by the user's tap.
-    */
-
     music.play()
 
         .then(function() {
-
 
             document
                 .getElementById("musicButton")
                 .innerHTML = "⏸️";
 
-
         })
 
         .catch(function() {
-
 
             console.log(
                 "Music requires manual play."
             );
 
-
         });
 
 
-    /*
-       Scroll to the beginning of
-       the invitation.
-    */
-
     window.scrollTo({
+
         top: 0,
+
         behavior: "smooth"
+
     });
 
 }
@@ -1865,28 +2110,36 @@ function countdown() {
 
     const days =
         Math.floor(
+
             difference /
             (1000 * 60 * 60 * 24)
+
         );
 
 
     const hours =
         Math.floor(
+
             (difference /
             (1000 * 60 * 60)) % 24
+
         );
 
 
     const minutes =
         Math.floor(
+
             (difference /
             (1000 * 60)) % 60
+
         );
 
 
     const seconds =
         Math.floor(
+
             (difference / 1000) % 60
+
         );
 
 
@@ -1894,28 +2147,28 @@ function countdown() {
         .getElementById("days")
         .innerHTML =
         String(days)
-        .padStart(2, "0");
+        .padStart(2,"0");
 
 
     document
         .getElementById("hours")
         .innerHTML =
         String(hours)
-        .padStart(2, "0");
+        .padStart(2,"0");
 
 
     document
         .getElementById("minutes")
         .innerHTML =
         String(minutes)
-        .padStart(2, "0");
+        .padStart(2,"0");
 
 
     document
         .getElementById("seconds")
         .innerHTML =
         String(seconds)
-        .padStart(2, "0");
+        .padStart(2,"0");
 
 }
 
