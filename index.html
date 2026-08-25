@@ -9,12 +9,11 @@
       content="width=device-width, initial-scale=1.0">
 
 <meta name="theme-color"
-      content="#faf3fb">
+      content="#faf5fc">
 
 <title>
 Prapul Kumar ❤️ Sreeja | Wedding Invitation
 </title>
-
 
 <style>
 
@@ -39,9 +38,9 @@ body {
         "Times New Roman",
         serif;
 
-    color: #633044;
+    background: #faf5fc;
 
-    background: #faf3fb;
+    color: #5d294e;
 
     overflow-x: hidden;
 }
@@ -68,12 +67,11 @@ body {
     overflow: hidden;
 
     background:
-
-        radial-gradient(
-            circle at center,
-            #ffffff 0%,
-            #fffaf2 45%,
-            #f7eaf6 100%
+        linear-gradient(
+            135deg,
+            #fffdf9,
+            #fbf2fb,
+            #f4e5f6
         );
 
     transition:
@@ -91,120 +89,69 @@ body {
 
 
 /* =====================================================
-   OPENING FLORAL DECOR
+   OPENING FLOWERS
 ===================================================== */
 
-.opening-flower {
+.open-flower {
 
     position: absolute;
 
     pointer-events: none;
 
-    user-select: none;
+    opacity: .85;
 
-    opacity: 0.85;
 }
 
 
-.flower-tl {
+.open-tl {
 
-    top: -30px;
+    top: -35px;
 
     left: -25px;
 
-    font-size: 110px;
+    font-size: 95px;
 
-    transform:
-        rotate(-15deg);
+    transform: rotate(-15deg);
+
 }
 
 
-.flower-tr {
+.open-tr {
 
-    top: -25px;
+    top: -35px;
 
     right: -25px;
 
-    font-size: 105px;
+    font-size: 90px;
 
-    transform:
-        rotate(15deg);
+    transform: rotate(15deg);
+
 }
 
 
-.flower-bl {
+.open-bl {
 
     bottom: -30px;
 
-    left: -20px;
+    left: -25px;
 
-    font-size: 115px;
+    font-size: 100px;
 
-    transform:
-        rotate(20deg);
+    transform: rotate(15deg);
+
 }
 
 
-.flower-br {
+.open-br {
 
-    bottom: -25px;
+    bottom: -30px;
 
-    right: -20px;
+    right: -25px;
 
-    font-size: 115px;
+    font-size: 100px;
 
-    transform:
-        rotate(-20deg);
-}
+    transform: rotate(-15deg);
 
-
-.small-flower {
-
-    position: absolute;
-
-    pointer-events: none;
-
-    opacity: .60;
-}
-
-
-.sf1 {
-
-    top: 18%;
-
-    left: 5%;
-
-    font-size: 32px;
-}
-
-
-.sf2 {
-
-    top: 28%;
-
-    right: 5%;
-
-    font-size: 30px;
-}
-
-
-.sf3 {
-
-    bottom: 25%;
-
-    left: 6%;
-
-    font-size: 32px;
-}
-
-
-.sf4 {
-
-    bottom: 17%;
-
-    right: 6%;
-
-    font-size: 34px;
 }
 
 
@@ -214,158 +161,117 @@ body {
 
 .opening-content {
 
-    position: relative;
-
-    z-index: 10;
-
-    width: 90%;
+    width: 92%;
 
     max-width: 620px;
 
-    padding: 25px 18px;
-
     text-align: center;
+
+    position: relative;
+
+    z-index: 5;
+
+    padding: 20px;
 }
 
 
-.opening-decoration {
+/* Om */
 
-    color: #a87cbd;
+.open-om {
 
-    font-size: 25px;
+    font-size: 68px;
 
-    letter-spacing: 8px;
+    color: #9b6b25;
 
     margin-bottom: 10px;
+
 }
 
 
-.opening-om {
+/* Sanskrit */
 
-    font-size: 62px;
-
-    color: #a57c35;
-
-    margin-bottom: 10px;
-}
-
-
-.opening-blessing {
-
-    font-size: 14px;
-
-    letter-spacing: 3px;
-
-    color: #765064;
-
-    line-height: 1.8;
-}
-
-
-.opening-hindi {
-
-    margin-top: 12px;
-
-    font-size: 20px;
-
-    color: #8d6a32;
-}
-
-
-/* =====================================================
-   OPENING TITLE
-===================================================== */
-
-.opening-title {
-
-    margin-top: 20px;
-
-    font-family:
-        "Brush Script MT",
-        "Segoe Script",
-        cursive;
-
-    font-size: 48px;
-
-    font-weight: normal;
-
-    color: #71385f;
-
-    line-height: 1.2;
-}
-
-
-/* =====================================================
-   OPENING NAMES
-===================================================== */
-
-.opening-names {
-
-    margin-top: 22px;
-
-    color: #71385f;
-}
-
-
-.opening-groom,
-.opening-bride {
-
-    font-family:
-        "Brush Script MT",
-        "Segoe Script",
-        cursive;
-
-    font-size: 48px;
-
-    font-weight: normal;
-}
-
-
-.opening-and {
-
-    margin: 3px 0;
+.open-sanskrit {
 
     font-size: 19px;
 
-    color: #a57c35;
+    color: #743c60;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* Blessing */
+
+.open-blessing {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #704c61;
 
     font-style: italic;
-}
-
-
-.opening-heart {
-
-    margin-top: 5px;
-
-    color: #9a5782;
-
-    font-size: 27px;
-
-    animation:
-        heartBeat 2s infinite;
-}
-
-
-@keyframes heartBeat {
-
-    0%,100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.12);
-    }
 
 }
 
 
-/* =====================================================
-   OPENING DATE
-===================================================== */
+/* Title */
 
-.opening-date {
+.open-title {
 
-    margin-top: 20px;
+    margin-top: 22px;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 52px;
+
+    font-weight: normal;
+
+    color: #762451;
+
+}
+
+
+/* Names */
+
+.open-name {
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 47px;
+
+    color: #762451;
+
+    margin-top: 13px;
+
+}
+
+
+.open-and {
+
+    color: #ae8234;
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    margin: 2px 0;
+
+}
+
+
+/* Date */
+
+.open-date {
+
+    margin-top: 18px;
 
     font-size: 14px;
 
@@ -373,7 +279,8 @@ body {
 
     line-height: 1.8;
 
-    color: #765064;
+    color: #744d60;
+
 }
 
 
@@ -385,102 +292,75 @@ body {
 
     margin-top: 27px;
 
-    min-height: 48px;
+    padding: 13px 34px;
 
-    padding:
-        12px 32px;
+    border: 1px solid #b28a3d;
 
-    border:
-        1px solid #a57c35;
+    border-radius: 30px;
 
-    border-radius:
-        30px;
+    background: #762451;
 
-    background:
-        #74365d;
+    color: white;
 
-    color:
-        white;
+    font-size: 14px;
 
-    font-family:
-        Georgia,
-        serif;
+    letter-spacing: 1px;
 
-    font-size:
-        14px;
-
-    letter-spacing:
-        1px;
-
-    cursor:
-        pointer;
+    cursor: pointer;
 
     box-shadow:
-        0 5px 18px
-        rgba(100,40,80,0.18);
+        0 7px 22px
+        rgba(100,35,75,.18);
 
-    transition:
-        .3s;
+    transition: .3s;
+
 }
 
 
 .open-button:hover {
 
-    background:
-        #9a6a31;
+    background: #a27a35;
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-3px);
+
 }
 
 
 /* =====================================================
-   MAIN CONTAINER
+   MAIN PAGE
 ===================================================== */
 
 .container {
 
-    width:
-        100%;
+    width: 100%;
 
-    min-height:
-        100vh;
+    min-height: 100vh;
+
 }
 
 
 /* =====================================================
-   PURPLE FLORAL MAIN CONTENT
+   REAL FLORAL INVITATION
 ===================================================== */
 
 .card {
 
-    position:
-        relative;
+    position: relative;
 
-    width:
-        100%;
+    width: 100%;
 
-    min-height:
-        100vh;
+    min-height: 100vh;
 
     padding:
-        55px 12% 70px;
+        70px 14% 75px;
 
-    text-align:
-        center;
-
-    /*
-       Purple floral image.
-
-       Upload:
-       purple-floral-background.png
-    */
+    text-align: center;
 
     background:
 
         linear-gradient(
-            rgba(250,244,252,0.78),
-            rgba(250,244,252,0.78)
+            rgba(252,247,253,.72),
+            rgba(252,247,253,.72)
         ),
 
         url("purple-floral-background.png");
@@ -494,84 +374,67 @@ body {
     background-size:
         cover;
 
-    background-attachment:
-        fixed;
-
-    overflow:
-        hidden;
+    overflow: hidden;
 }
 
 
 /* =====================================================
-   SOFT CENTER GLOW
+   SOFT WHITE CENTER
 ===================================================== */
 
 .card::after {
 
-    content:
-        "";
+    content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    inset:
-        0;
+    inset: 0;
 
     background:
 
         radial-gradient(
             ellipse at center,
-            rgba(255,255,255,0.88) 5%,
-            rgba(255,255,255,0.55) 52%,
-            rgba(237,216,244,0.18) 100%
+            rgba(255,255,255,.92) 5%,
+            rgba(255,255,255,.70) 42%,
+            rgba(255,255,255,.20) 78%,
+            transparent 100%
         );
 
-    pointer-events:
-        none;
+    pointer-events: none;
 
-    z-index:
-        0;
+    z-index: 0;
 }
 
 
 /* =====================================================
-   BORDER
+   GOLD INNER BORDER
 ===================================================== */
 
 .card::before {
 
-    content:
-        "";
+    content: "";
 
-    position:
-        absolute;
+    position: absolute;
 
-    inset:
-        18px;
+    inset: 20px;
 
     border:
         1px solid
-        rgba(126,76,145,0.35);
+        rgba(170,125,42,.55);
 
-    pointer-events:
-        none;
+    pointer-events: none;
 
-    z-index:
-        3;
+    z-index: 5;
 }
 
 
-/* =====================================================
-   CONTENT ABOVE BACKGROUND
-===================================================== */
+/* Keep content above background */
 
 .card > * {
 
-    position:
-        relative;
+    position: relative;
 
-    z-index:
-        2;
+    z-index: 2;
 }
 
 
@@ -581,107 +444,99 @@ body {
 
 .ganesh {
 
-    font-size:
-        68px;
+    font-size: 68px;
 
-    color:
-        #a77b34;
+    color: #9d702c;
 
     animation:
-        gentleFloat 4s
-        ease-in-out
-        infinite;
+        floatGanesh 4s ease-in-out infinite;
+
 }
 
 
-@keyframes gentleFloat {
+@keyframes floatGanesh {
 
     0%,100% {
-
-        transform:
-            translateY(0);
-
+        transform: translateY(0);
     }
 
     50% {
-
-        transform:
-            translateY(-5px);
-
+        transform: translateY(-6px);
     }
+
 }
 
 
 /* =====================================================
-   HEADINGS
+   SANSKRIT
 ===================================================== */
 
 .heading {
 
-    margin-top:
-        10px;
+    margin-top: 8px;
 
-    font-size:
-        15px;
+    font-size: 18px;
 
-    letter-spacing:
-        3px;
+    color: #6e3c58;
 
-    color:
-        #70445f;
+    letter-spacing: 2px;
+
 }
 
 
 .subtitle {
 
-    margin-top:
-        12px;
+    margin-top: 15px;
 
-    font-size:
-        18px;
+    font-size: 20px;
 
-    line-height:
-        1.7;
+    line-height: 1.7;
 
-    color:
-        #704654;
+    color: #70485e;
 
-    font-style:
-        italic;
+    font-style: italic;
+
 }
 
 
+/* =====================================================
+   MAIN TITLE
+===================================================== */
+
 .title {
 
-    margin:
-        20px 0;
+    margin-top: 22px;
 
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size:
-        48px;
+    font-size: 57px;
 
-    font-weight:
-        normal;
+    font-weight: normal;
 
-    color:
-        #71385f;
+    color: #741f51;
+
 }
 
 
-.intro-text {
+/* =====================================================
+   INTRO
+===================================================== */
 
-    font-size:
-        15px;
+.intro {
 
-    line-height:
-        1.8;
+    margin-top: 18px;
 
-    color:
-        #704654;
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #633c52;
+
+    letter-spacing: 1px;
+
 }
 
 
@@ -691,8 +546,8 @@ body {
 
 .names {
 
-    margin:
-        28px 0;
+    margin-top: 25px;
+
 }
 
 
@@ -703,43 +558,52 @@ body {
         "Segoe Script",
         cursive;
 
-    font-size:
-        50px;
+    font-size: 60px;
 
-    color:
-        #71385f;
+    color: #762451;
 
-    font-weight:
-        normal;
+    font-weight: normal;
+
 }
 
 
 .and {
 
-    margin:
-        5px;
+    font-size: 21px;
 
-    font-size:
-        20px;
+    color: #a4782d;
 
-    color:
-        #a57c35;
+    font-style: italic;
 
-    font-style:
-        italic;
+    margin: 2px 0;
+
 }
 
 
 .heart {
 
-    margin-top:
-        8px;
+    font-size: 32px;
 
-    font-size:
-        28px;
+    margin-top: 8px;
 
-    color:
-        #9a5782;
+    color: #a43872;
+
+    animation:
+        heartbeat 1.8s infinite;
+
+}
+
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.13);
+    }
+
 }
 
 
@@ -749,50 +613,42 @@ body {
 
 .photo {
 
-    width:
-        235px;
+    width: 270px;
 
-    height:
-        235px;
+    height: 270px;
 
     margin:
-        28px auto;
+        32px auto 25px;
 
-    padding:
-        5px;
+    padding: 6px;
 
     border:
-        1px solid
-        #9d79ae;
+        2px solid
+        #b68b37;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
-    background:
-        rgba(255,255,255,0.90);
+    background: #fff;
 
-    overflow:
-        hidden;
+    overflow: hidden;
 
     box-shadow:
-        0 5px 20px
-        rgba(80,30,80,0.14);
+        0 8px 30px
+        rgba(85,30,75,.18);
+
 }
 
 
 .photo img {
 
-    width:
-        100%;
+    width: 100%;
 
-    height:
-        100%;
+    height: 100%;
 
-    object-fit:
-        cover;
+    object-fit: cover;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
+
 }
 
 
@@ -802,23 +658,21 @@ body {
 
 .divider {
 
-    width:
-        55%;
+    width: 55%;
 
-    height:
-        1px;
+    height: 1px;
 
-    margin:
-        28px auto;
+    margin: 28px auto;
 
     background:
 
         linear-gradient(
             to right,
             transparent,
-            rgba(126,76,145,0.60),
+            #b18a3c,
             transparent
         );
+
 }
 
 
@@ -828,43 +682,36 @@ body {
 
 .day {
 
-    font-size:
-        21px;
+    font-size: 22px;
 
-    letter-spacing:
-        5px;
+    letter-spacing: 6px;
 
-    color:
-        #70445f;
+    color: #70425b;
+
 }
 
 
 .date {
 
-    margin:
-        8px 0;
+    margin-top: 8px;
 
-    font-size:
-        39px;
+    font-size: 40px;
 
-    color:
-        #71385f;
+    color: #762451;
 
-    font-weight:
-        normal;
 }
 
 
 .time {
 
-    font-size:
-        19px;
+    margin-top: 8px;
 
-    color:
-        #80505d;
+    font-size: 19px;
 
-    letter-spacing:
-        1px;
+    color: #784f63;
+
+    letter-spacing: 1px;
+
 }
 
 
@@ -874,88 +721,76 @@ body {
 
 .countdown-title {
 
-    margin-bottom:
-        15px;
-
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size:
-        28px;
+    font-size: 32px;
 
-    color:
-        #71385f;
+    color: #762451;
+
+    margin-bottom: 17px;
+
 }
 
 
 .countdown {
 
-    display:
-        flex;
+    display: flex;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    gap:
-        8px;
+    gap: 9px;
 
-    flex-wrap:
-        wrap;
+    flex-wrap: wrap;
+
 }
 
 
-.box {
+.count-box {
 
-    width:
-        70px;
+    width: 75px;
 
-    padding:
-        10px 5px;
+    padding: 11px 5px;
+
+    background:
+        rgba(255,255,255,.80);
 
     border:
         1px solid
-        rgba(126,76,145,0.50);
+        rgba(155,110,170,.45);
 
-    border-radius:
-        8px;
-
-    background:
-        rgba(255,255,255,0.70);
+    border-radius: 10px;
 
     box-shadow:
-        0 3px 10px
-        rgba(100,60,120,0.06);
+        0 4px 15px
+        rgba(100,60,110,.08);
+
 }
 
 
-.number {
+.count-number {
 
-    font-size:
-        23px;
+    font-size: 25px;
 
-    color:
-        #71385f;
+    font-weight: bold;
 
-    font-weight:
-        bold;
+    color: #762451;
+
 }
 
 
-.label {
+.count-label {
 
-    margin-top:
-        3px;
+    margin-top: 3px;
 
-    font-size:
-        9px;
+    font-size: 9px;
 
-    letter-spacing:
-        1px;
+    letter-spacing: 1px;
 
-    color:
-        #80505d;
+    color: #765266;
+
 }
 
 
@@ -970,92 +805,82 @@ body {
         "Segoe Script",
         cursive;
 
-    font-size:
-        29px;
+    font-size: 32px;
 
-    color:
-        #805c2d;
+    color: #8c6428;
+
 }
 
 
 .venue {
 
-    margin:
-        8px 0;
+    margin-top: 7px;
 
-    font-size:
-        30px;
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
 
-    color:
-        #71385f;
+    font-size: 43px;
+
+    color: #762451;
+
 }
 
 
 .address {
 
-    font-size:
-        17px;
+    margin-top: 5px;
 
-    line-height:
-        1.7;
+    font-size: 17px;
 
-    color:
-        #704654;
+    line-height: 1.7;
+
+    color: #674356;
+
 }
 
 
 /* =====================================================
-   MAP BUTTON
+   MAP
 ===================================================== */
 
 .map {
 
-    display:
-        inline-block;
+    display: inline-block;
 
-    margin-top:
-        16px;
+    margin-top: 18px;
 
-    min-height:
-        44px;
-
-    padding:
-        10px 24px;
+    padding: 11px 25px;
 
     border:
         1px solid
-        #9270a2;
+        #9b78a7;
 
-    border-radius:
-        25px;
+    border-radius: 28px;
 
     background:
-        rgba(255,255,255,0.72);
+        rgba(255,255,255,.80);
 
-    color:
-        #71385f;
+    color: #762451;
 
-    text-decoration:
-        none;
+    text-decoration: none;
 
-    font-size:
-        14px;
+    font-size: 14px;
 
-    transition:
-        .3s;
+    transition: .3s;
+
 }
 
 
 .map:hover {
 
-    background:
-        #71385f;
+    background: #762451;
 
-    color:
-        white;
+    color: white;
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
+
 }
 
 
@@ -1065,84 +890,72 @@ body {
 
 .family-title {
 
-    margin-bottom:
-        20px;
-
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size:
-        29px;
+    font-size: 31px;
 
-    color:
-        #71385f;
+    color: #762451;
+
+    margin-bottom: 18px;
+
 }
 
 
 .family {
 
-    display:
-        flex;
+    display: flex;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    gap:
-        70px;
-
-    flex-wrap:
-        wrap;
 }
 
 
 .family-box {
 
-    min-width:
-        220px;
+    min-width: 230px;
 
-    padding:
-        15px 25px;
+    padding: 17px 30px;
+
+    background:
+        rgba(255,255,255,.70);
 
     border:
         1px solid
-        rgba(126,76,145,0.30);
+        rgba(150,110,160,.35);
 
-    border-radius:
-        16px;
+    border-radius: 18px;
 
-    background:
-        rgba(255,255,255,0.55);
+    box-shadow:
+        0 5px 18px
+        rgba(90,50,100,.07);
+
 }
 
 
 .family-heading {
 
-    margin-bottom:
-        7px;
+    font-size: 17px;
 
-    font-size:
-        16px;
+    color: #a0762f;
 
-    color:
-        #a17a35;
+    font-weight: bold;
 
-    font-weight:
-        bold;
+    margin-bottom: 7px;
+
 }
 
 
 .family-name {
 
-    font-size:
-        17px;
+    font-size: 18px;
 
-    line-height:
-        1.6;
+    line-height: 1.7;
 
-    color:
-        #704654;
+    color: #6b4056;
+
 }
 
 
@@ -1152,68 +965,52 @@ body {
 
 .contact-title {
 
-    margin-bottom:
-        22px;
-
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size:
-        31px;
+    font-size: 34px;
 
-    color:
-        #71385f;
+    color: #762451;
+
+    margin-bottom: 20px;
+
 }
 
 
 .contacts {
 
-    display:
-        flex;
+    display: flex;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    align-items:
-        center;
+    gap: 18px;
 
-    gap:
-        18px;
+    flex-wrap: wrap;
 
-    flex-wrap:
-        wrap;
 }
 
 
-/* Contact card */
-
 .contact-card {
 
-    min-width:
-        205px;
+    padding: 6px;
 
-    padding:
-        14px 18px;
+    background:
+        rgba(255,255,255,.75);
 
     border:
         1px solid
-        rgba(126,76,145,0.38);
+        rgba(150,110,160,.4);
 
-    border-radius:
-        18px;
-
-    background:
-        rgba(255,255,255,0.72);
+    border-radius: 30px;
 
     box-shadow:
         0 5px 18px
-        rgba(90,40,100,0.08);
+        rgba(80,40,90,.08);
 
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
+    transition: .3s;
+
 }
 
 
@@ -1222,107 +1019,85 @@ body {
     transform:
         translateY(-4px);
 
-    box-shadow:
-        0 10px 25px
-        rgba(90,40,100,0.15);
 }
 
 
-/* Phone button */
-
 .contact {
 
-    display:
-        inline-flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    gap:
-        7px;
+    gap: 8px;
 
-    min-height:
-        44px;
+    min-width: 190px;
 
     padding:
-        9px 18px;
+        10px 20px;
 
-    border-radius:
-        25px;
+    border-radius: 25px;
 
     background:
-        #71385f;
+        #762451;
 
-    color:
-        white;
+    color: white;
 
-    text-decoration:
-        none;
+    text-decoration: none;
 
-    font-family:
-        Georgia,
-        serif;
+    font-size: 16px;
 
-    font-size:
-        16px;
+    transition: .3s;
 
-    transition:
-        .3s;
 }
 
 
 .contact:hover {
 
     background:
-        #9a6a31;
+        #a47732;
 
-    transform:
-        scale(1.03);
 }
 
 
 .phone-icon {
 
-    font-size:
-        17px;
+    font-size: 18px;
+
 }
 
 
 /* =====================================================
-   FOOTER
+   FINAL MESSAGE
 ===================================================== */
 
 .footer {
 
-    font-size:
-        17px;
+    margin-top: 5px;
 
-    line-height:
-        1.8;
+    font-size: 17px;
 
-    color:
-        #704654;
+    line-height: 1.8;
+
+    color: #6c4358;
+
 }
 
 
 .footer-names {
 
-    margin-top:
-        15px;
+    margin-top: 15px;
 
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size:
-        32px;
+    font-size: 38px;
 
-    color:
-        #71385f;
+    color: #762451;
+
 }
 
 
@@ -1332,46 +1107,46 @@ body {
 
 .music {
 
-    position:
-        fixed;
+    position: fixed;
 
-    right:
-        18px;
+    right: 18px;
 
-    bottom:
-        18px;
+    bottom: 18px;
 
-    width:
-        52px;
+    z-index: 500;
 
-    height:
-        52px;
+    width: 55px;
+
+    height: 55px;
 
     border:
         1px solid
-        #9270a2;
+        #9875a6;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
     background:
-        rgba(255,250,255,0.95);
+        rgba(255,250,255,.96);
 
     color:
-        #71385f;
+        #762451;
 
-    font-size:
-        21px;
+    font-size: 22px;
 
-    cursor:
-        pointer;
-
-    z-index:
-        500;
+    cursor: pointer;
 
     box-shadow:
-        0 4px 14px
-        rgba(80,30,90,0.12);
+        0 5px 18px
+        rgba(80,30,90,.16);
+
+    transition: .3s;
+
+}
+
+
+.music:hover {
+
+    transform: scale(1.08);
 
 }
 
@@ -1382,27 +1157,23 @@ body {
 
 .flower {
 
-    position:
-        fixed;
+    position: fixed;
 
-    top:
-        -30px;
+    top: -30px;
 
-    z-index:
-        200;
+    z-index: 100;
 
-    pointer-events:
-        none;
+    pointer-events: none;
 
-    opacity:
-        0.45;
+    opacity: .35;
 
     animation:
-        fall linear forwards;
+        falling linear forwards;
+
 }
 
 
-@keyframes fall {
+@keyframes falling {
 
     to {
 
@@ -1411,6 +1182,7 @@ body {
             rotate(360deg);
 
     }
+
 }
 
 
@@ -1421,208 +1193,117 @@ body {
 @media(max-width:600px) {
 
 
-    #opening {
-
-        padding:
-            10px;
-
-    }
-
-
-    .flower-tl {
-
-        font-size:
-            80px;
-
-        top:
-            -15px;
-
-        left:
-            -20px;
-    }
-
-
-    .flower-tr {
-
-        font-size:
-            78px;
-
-        top:
-            -12px;
-
-        right:
-            -18px;
-    }
-
-
-    .flower-bl {
-
-        font-size:
-            85px;
-
-        bottom:
-            -18px;
-
-        left:
-            -18px;
-    }
-
-
-    .flower-br {
-
-        font-size:
-            85px;
-
-        bottom:
-            -18px;
-
-        right:
-            -18px;
-    }
-
-
-    .opening-content {
-
-        width:
-            95%;
-
-        padding:
-            15px 8px;
-    }
-
-
-    .opening-decoration {
-
-        font-size:
-            21px;
-    }
-
-
-    .opening-om {
-
-        font-size:
-            55px;
-    }
-
-
-    .opening-blessing {
-
-        font-size:
-            11px;
-
-        letter-spacing:
-            2px;
-    }
-
-
-    .opening-hindi {
-
-        font-size:
-            18px;
-    }
-
-
-    .opening-title {
-
-        font-size:
-            38px;
-    }
-
-
-    .opening-groom,
-    .opening-bride {
-
-        font-size:
-            40px;
-    }
-
-
-    .opening-date {
-
-        font-size:
-            12px;
-    }
-
-
-    .open-button {
-
-        min-height:
-            48px;
-
-        padding:
-            11px 27px;
-    }
-
-
     .card {
 
         padding:
-            45px 18px 55px;
+            55px 22px 65px;
+
+        background-size:
+            auto 100%;
 
         background-attachment:
             scroll;
 
-        background-size:
-            auto 100%;
     }
 
 
     .card::before {
 
-        inset:
-            10px;
+        inset: 11px;
+
+    }
+
+
+    .open-title {
+
+        font-size: 40px;
+
+    }
+
+
+    .open-name {
+
+        font-size: 39px;
+
+    }
+
+
+    .open-om {
+
+        font-size: 58px;
+
+    }
+
+
+    .open-blessing {
+
+        font-size: 14px;
+
     }
 
 
     .title {
 
-        font-size:
-            39px;
+        font-size: 43px;
+
     }
 
 
     .name {
 
-        font-size:
-            41px;
-    }
+        font-size: 45px;
 
-
-    .date {
-
-        font-size:
-            30px;
     }
 
 
     .photo {
 
-        width:
-            210px;
+        width: 225px;
 
-        height:
-            210px;
+        height: 225px;
+
     }
 
 
-    .family {
+    .date {
 
-        gap:
-            25px;
+        font-size: 31px;
+
+    }
+
+
+    .venue {
+
+        font-size: 36px;
+
     }
 
 
     .family-box {
 
-        width:
-            90%;
+        width: 90%;
+
     }
 
 
     .contact-card {
 
-        width:
-            min(90%,300px);
+        width: 90%;
+
+    }
+
+
+    .contact {
+
+        width: 100%;
+
+    }
+
+
+    .footer-names {
+
+        font-size: 31px;
+
     }
 
 }
@@ -1635,46 +1316,47 @@ body {
 @media(max-width:380px) {
 
 
-    .opening-title {
+    .open-title {
 
-        font-size:
-            34px;
+        font-size: 34px;
+
     }
 
 
-    .opening-groom,
-    .opening-bride {
+    .open-name {
 
-        font-size:
-            35px;
-    }
+        font-size: 34px;
 
-
-    .opening-blessing {
-
-        font-size:
-            10px;
-    }
-
-
-    .name {
-
-        font-size:
-            35px;
-    }
-
-
-    .date {
-
-        font-size:
-            27px;
     }
 
 
     .title {
 
-        font-size:
-            34px;
+        font-size: 37px;
+
+    }
+
+
+    .name {
+
+        font-size: 39px;
+
+    }
+
+
+    .photo {
+
+        width: 205px;
+
+        height: 205px;
+
+    }
+
+
+    .date {
+
+        font-size: 28px;
+
     }
 
 }
@@ -1688,133 +1370,88 @@ body {
 
 
 <!-- =====================================================
-     OPENING SCREEN
+     OPENING PAGE
 ===================================================== -->
 
 <div id="opening">
 
 
-    <!-- Floral corners -->
-
-    <div class="opening-flower flower-tl">
+    <div class="open-flower open-tl">
         🌸🌿
     </div>
 
 
-    <div class="opening-flower flower-tr">
+    <div class="open-flower open-tr">
+        🌹🌿
+    </div>
+
+
+    <div class="open-flower open-bl">
         🌺🌿
     </div>
 
 
-    <div class="opening-flower flower-bl">
+    <div class="open-flower open-br">
         🌷🌿
     </div>
 
 
-    <div class="opening-flower flower-br">
-        🌸🌿
-    </div>
-
-
-    <!-- Small flowers -->
-
-    <div class="small-flower sf1">
-        🌼
-    </div>
-
-
-    <div class="small-flower sf2">
-        🌸
-    </div>
-
-
-    <div class="small-flower sf3">
-        🌺
-    </div>
-
-
-    <div class="small-flower sf4">
-        🌼
-    </div>
-
-
-    <!-- Opening content -->
-
     <div class="opening-content">
 
 
-        <div class="opening-decoration">
-            ❈ ❈ ❈
+        <div class="open-om">
+            ॐ
         </div>
 
 
-        <div class="opening-om">
-            🕉️
-        </div>
-
-
-        <div class="opening-blessing">
-
-            WITH THE BLESSINGS OF ALMIGHTY
-            <br>
-
-            AND OUR BELOVED ELDERS
-
-        </div>
-
-
-        <div class="opening-hindi">
+        <div class="open-sanskrit">
 
             ॥ श्री गणेशाय नमः ॥
 
         </div>
 
 
-        <div class="opening-title">
+        <div class="open-blessing">
+
+            With the blessings of Almighty
+            <br>
+
+            and our beloved elders
+
+        </div>
+
+
+        <div class="open-title">
 
             Wedding Invitation
 
         </div>
 
 
-        <div class="opening-names">
+        <div class="open-name">
 
-
-            <div class="opening-groom">
-
-                Prapul Kumar
-
-            </div>
-
-
-            <div class="opening-and">
-
-                &
-
-            </div>
-
-
-            <div class="opening-bride">
-
-                Sreeja
-
-            </div>
-
-
-            <div class="opening-heart">
-
-                ♥️
-
-            </div>
-
+            Prapul Kumar
 
         </div>
 
 
-        <div class="opening-date">
+        <div class="open-and">
+
+            — and —
+
+        </div>
+
+
+        <div class="open-name">
+
+            Sreeja
+
+        </div>
+
+
+        <div class="open-date">
 
             SUNDAY · 30 AUGUST 2026
-
             <br>
 
             MUHURTHAM · 11:09 AM
@@ -1824,7 +1461,6 @@ body {
 
         <button
             class="open-button"
-            type="button"
             onclick="openInvitation()">
 
             ✨ TAP TO OPEN ✨
@@ -1859,7 +1495,6 @@ body {
 <button
     class="music"
     id="musicButton"
-    type="button"
     onclick="toggleMusic()">
 
     🎵
@@ -1877,326 +1512,82 @@ body {
 <div class="card">
 
 
-<!-- =====================================================
-     GANESH
-===================================================== -->
+    <!-- =================================================
+         GANESH
+    ================================================== -->
 
-<div class="ganesh">
-
-    🕉️
-
-</div>
+    <div class="ganesh">
+        ॐ
+    </div>
 
 
-<div class="heading">
+    <div class="heading">
 
-    ॥ श्री गणेशाय नमः ॥
-
-</div>
-
-
-<div class="subtitle">
-
-    With the blessings of Almighty
-    <br>
-
-    and our beloved elders
-
-</div>
-
-
-<!-- TITLE -->
-
-<div class="title">
-
-    Wedding Invitation
-
-</div>
-
-
-<div class="intro-text">
-
-    YOU ARE CORDIALLY INVITED TO
-    <br>
-
-    THE WEDDING CEREMONY OF
-
-</div>
-
-
-<!-- =====================================================
-     NAMES
-===================================================== -->
-
-<div class="names">
-
-
-    <div class="name">
-
-        Prapul Kumar
+        ॥ श्री गणेशाय नमः ॥
 
     </div>
 
 
-    <div class="and">
+    <div class="subtitle">
 
-        — and —
+        With the blessings of Almighty
+        <br>
 
-    </div>
-
-
-    <div class="name">
-
-        Sreeja
+        and our beloved elders
 
     </div>
 
 
-    <div class="heart">
+    <!-- TITLE -->
 
-        ♥️
+    <div class="title">
 
-    </div>
-
-
-</div>
-
-
-<!-- =====================================================
-     COUPLE PHOTO
-===================================================== -->
-
-<div class="photo">
-
-
-    <img
-
-        src="Picsart_26-08-25_22-05-08-389.png"
-
-        alt="Prapul Kumar and Sreeja"
-
-        onerror="
-        this.style.display='none';
-        this.parentElement.innerHTML=
-        '<span style=\'color:#8b5d24;font-size:14px\'>Couple photo not found</span>';
-        "
-
-    >
-
-
-</div>
-
-
-<div class="divider"></div>
-
-
-<!-- =====================================================
-     DATE
-===================================================== -->
-
-<div class="day">
-
-    SUNDAY
-
-</div>
-
-
-<div class="date">
-
-    AUGUST 30, 2026
-
-</div>
-
-
-<div class="time">
-
-    ✦ MUHURTHAM : 11:09 AM ✦
-
-</div>
-
-
-<div class="divider"></div>
-
-
-<!-- =====================================================
-     COUNTDOWN
-===================================================== -->
-
-<div class="countdown-title">
-
-    Our Special Day
-
-</div>
-
-
-<div class="countdown">
-
-
-    <div class="box">
-
-        <div
-            class="number"
-            id="days">
-
-            00
-
-        </div>
-
-        <div class="label">
-
-            DAYS
-
-        </div>
+        Wedding Invitation
 
     </div>
 
 
-    <div class="box">
+    <div class="intro">
 
-        <div
-            class="number"
-            id="hours">
+        YOU ARE CORDIALLY INVITED TO
+        <br>
 
-            00
-
-        </div>
-
-        <div class="label">
-
-            HOURS
-
-        </div>
+        THE WEDDING CEREMONY OF
 
     </div>
 
 
-    <div class="box">
+    <!-- =================================================
+         NAMES
+    ================================================== -->
 
-        <div
-            class="number"
-            id="minutes">
-
-            00
-
-        </div>
-
-        <div class="label">
-
-            MINUTES
-
-        </div>
-
-    </div>
+    <div class="names">
 
 
-    <div class="box">
+        <div class="name">
 
-        <div
-            class="number"
-            id="seconds">
-
-            00
-
-        </div>
-
-        <div class="label">
-
-            SECONDS
-
-        </div>
-
-    </div>
-
-
-</div>
-
-
-<div class="divider"></div>
-
-
-<!-- =====================================================
-     VENUE
-===================================================== -->
-
-<div class="venue-title">
-
-    ✦ WEDDING VENUE ✦
-
-</div>
-
-
-<div class="venue">
-
-    Viola Garden
-
-</div>
-
-
-<div class="address">
-
-    Kushal Nagar,
-    <br>
-
-    Hanamkonda Road,
-    <br>
-
-    Siddipet – 502103
-
-</div>
-
-
-<a
-
-    class="map"
-
-    href="https://www.google.com/maps/search/?api=1&query=Viola+Garden+Kushal+Nagar+Hanamkonda+Road+Siddipet+502103"
-
-    target="_blank">
-
-    📍 OPEN GOOGLE MAPS
-
-</a>
-
-
-<div class="divider"></div>
-
-
-<!-- =====================================================
-     FAMILY
-     ONLY GROOM'S FAMILY
-===================================================== -->
-
-<div class="family-title">
-
-    With Love & Blessings From
-
-</div>
-
-
-<div class="family">
-
-
-    <div class="family-box">
-
-
-        <div class="family-heading">
-
-            Groom's Family
+            Prapul Kumar
 
         </div>
 
 
-        <div class="family-name">
+        <div class="and">
 
-            Sri Narender
+            — and —
 
-            <br>
+        </div>
 
-            &
 
-            <br>
+        <div class="name">
 
-            Smt. Vijaya
+            Sreeja
+
+        </div>
+
+
+        <div class="heart">
+
+            ♥️
 
         </div>
 
@@ -2204,60 +1595,331 @@ body {
     </div>
 
 
-</div>
+    <!-- =================================================
+         COUPLE PHOTO
+    ================================================== -->
+
+    <div class="photo">
+
+        <img
+            src="Picsart_26-08-25_22-05-08-389.png"
+            alt="Prapul Kumar and Sreeja">
+
+    </div>
 
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
 
-<!-- =====================================================
-     CONTACT
-     NO GROOM / BRIDE LABEL
-===================================================== -->
+    <!-- =================================================
+         DATE
+    ================================================== -->
 
-<div class="contact-title">
+    <div class="day">
 
-    📞 Contact
+        SUNDAY
 
-</div>
-
-
-<div class="contacts">
+    </div>
 
 
-    <div class="contact-card">
+    <div class="date">
+
+        30 AUGUST 2026
+
+    </div>
 
 
-        <a
-            class="contact"
-            href="tel:9885114423">
+    <div class="time">
 
-            <span class="phone-icon">
-                📱
-            </span>
+        ✦ MUHURTHAM : 11:09 AM ✦
 
-            9885114423
+    </div>
 
-        </a>
+
+    <div class="divider"></div>
+
+
+    <!-- =================================================
+         COUNTDOWN
+    ================================================== -->
+
+    <div class="countdown-title">
+
+        Our Special Day
+
+    </div>
+
+
+    <div class="countdown">
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="days">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                DAYS
+
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="hours">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                HOURS
+
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="minutes">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                MINUTES
+
+            </div>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <div
+                class="count-number"
+                id="seconds">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                SECONDS
+
+            </div>
+
+        </div>
 
 
     </div>
 
 
-    <div class="contact-card">
+    <div class="divider"></div>
 
 
-        <a
-            class="contact"
-            href="tel:7893725737">
+    <!-- =================================================
+         VENUE
+    ================================================== -->
 
-            <span class="phone-icon">
-                📱
-            </span>
+    <div class="venue-title">
 
-            7893725737
+        ✦ Wedding Venue ✦
 
-        </a>
+    </div>
+
+
+    <div class="venue">
+
+        Viola Garden
+
+    </div>
+
+
+    <div class="address">
+
+        Kushal Nagar,
+        <br>
+
+        Hanamkonda Road,
+        <br>
+
+        Siddipet – 502103
+
+    </div>
+
+
+    <a
+        class="map"
+
+        href="https://www.google.com/maps/search/?api=1&query=Viola+Garden+Kushal+Nagar+Hanamkonda+Road+Siddipet+502103"
+
+        target="_blank">
+
+        📍 Open Google Maps
+
+    </a>
+
+
+    <div class="divider"></div>
+
+
+    <!-- =================================================
+         FAMILY
+         ONLY GROOM FAMILY
+    ================================================== -->
+
+    <div class="family-title">
+
+        With Love & Blessings From
+
+    </div>
+
+
+    <div class="family">
+
+
+        <div class="family-box">
+
+
+            <div class="family-heading">
+
+                Groom's Family
+
+            </div>
+
+
+            <div class="family-name">
+
+                Sri Narender
+                <br>
+
+                &
+                <br>
+
+                Smt. Vijaya
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+    <div class="contact-title">
+
+        📞 Contact
+
+    </div>
+
+
+    <div class="contacts">
+
+
+        <div class="contact-card">
+
+            <a
+                class="contact"
+                href="tel:9885114423">
+
+                <span class="phone-icon">
+                    📱
+                </span>
+
+                9885114423
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <a
+                class="contact"
+                href="tel:7893725737">
+
+                <span class="phone-icon">
+                    📱
+                </span>
+
+                7893725737
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <!-- =================================================
+         FINAL MESSAGE
+    ================================================== -->
+
+    <div class="footer">
+
+
+        <em>
+
+            Two hearts, two families,
+            one beautiful beginning...
+
+        </em>
+
+
+        <br><br>
+
+
+        We joyfully invite you and your family
+        <br>
+
+        to celebrate our special day with us.
+
+
+        <br><br>
+
+
+        Your presence and blessings
+        <br>
+
+        will make our wedding truly memorable.
+
+
+        <div class="footer-names">
+
+            Prapul Kumar ❤️ Sreeja
+
+        </div>
 
 
     </div>
@@ -2265,68 +1927,10 @@ body {
 
 </div>
 
-
-<div class="divider"></div>
-
-
-<!-- =====================================================
-     FINAL MESSAGE
-===================================================== -->
-
-<div class="footer">
-
-
-    <em>
-
-        Two hearts, two families,
-        one beautiful beginning...
-
-    </em>
-
-
-    <br>
-    <br>
-
-
-    We joyfully invite you and your family
-
-    <br>
-
-    to celebrate our special day with us.
-
-
-    <br>
-    <br>
-
-
-    Your presence and blessings
-
-    <br>
-
-    will make our wedding truly memorable.
-
-
-    <div class="footer-names">
-
-        Prapul Kumar ❤️ Sreeja
-
-    </div>
-
-
 </div>
 
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
 
 <script>
-
 
 /* =====================================================
    OPEN INVITATION
@@ -2334,10 +1938,8 @@ body {
 
 function openInvitation() {
 
-
     const opening =
         document.getElementById("opening");
-
 
     opening.classList.add("hide");
 
@@ -2359,33 +1961,22 @@ function openInvitation() {
         .catch(function() {
 
             console.log(
-                "Music requires manual play."
+                "Music playback requires user interaction."
             );
 
         });
-
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
-
-    });
 
 }
 
 
 /* =====================================================
-   MUSIC CONTROL
+   MUSIC
 ===================================================== */
 
 function toggleMusic() {
 
-
     const music =
         document.getElementById("music");
-
 
     const button =
         document.getElementById("musicButton");
@@ -2393,24 +1984,17 @@ function toggleMusic() {
 
     if (music.paused) {
 
-
         music.play();
 
-
-        button.innerHTML =
-            "⏸️";
-
+        button.innerHTML = "⏸️";
 
     }
 
     else {
 
-
         music.pause();
 
-
-        button.innerHTML =
-            "🎵";
+        button.innerHTML = "🎵";
 
     }
 
@@ -2427,8 +2011,7 @@ const weddingDate =
     ).getTime();
 
 
-function countdown() {
-
+function updateCountdown() {
 
     const now =
         new Date().getTime();
@@ -2440,26 +2023,17 @@ function countdown() {
 
     if (difference <= 0) {
 
-
-        document
-            .getElementById("days")
+        document.getElementById("days")
             .innerHTML = "00";
 
-
-        document
-            .getElementById("hours")
+        document.getElementById("hours")
             .innerHTML = "00";
 
-
-        document
-            .getElementById("minutes")
+        document.getElementById("minutes")
             .innerHTML = "00";
 
-
-        document
-            .getElementById("seconds")
+        document.getElementById("seconds")
             .innerHTML = "00";
-
 
         return;
 
@@ -2468,74 +2042,58 @@ function countdown() {
 
     const days =
         Math.floor(
-
             difference /
             (1000 * 60 * 60 * 24)
-
         );
 
 
     const hours =
         Math.floor(
-
             (difference /
             (1000 * 60 * 60)) % 24
-
         );
 
 
     const minutes =
         Math.floor(
-
             (difference /
             (1000 * 60)) % 60
-
         );
 
 
     const seconds =
         Math.floor(
-
             (difference / 1000) % 60
-
         );
 
 
-    document
-        .getElementById("days")
+    document.getElementById("days")
         .innerHTML =
-        String(days)
-        .padStart(2, "0");
+        String(days).padStart(2,"0");
 
 
-    document
-        .getElementById("hours")
+    document.getElementById("hours")
         .innerHTML =
-        String(hours)
-        .padStart(2, "0");
+        String(hours).padStart(2,"0");
 
 
-    document
-        .getElementById("minutes")
+    document.getElementById("minutes")
         .innerHTML =
-        String(minutes)
-        .padStart(2, "0");
+        String(minutes).padStart(2,"0");
 
 
-    document
-        .getElementById("seconds")
+    document.getElementById("seconds")
         .innerHTML =
-        String(seconds)
-        .padStart(2, "0");
+        String(seconds).padStart(2,"0");
 
 }
 
 
-countdown();
+updateCountdown();
 
 
 setInterval(
-    countdown,
+    updateCountdown,
     1000
 );
 
@@ -2544,78 +2102,66 @@ setInterval(
    FALLING FLOWERS
 ===================================================== */
 
-const flowers = [
-
+const petals = [
     "🌸",
     "🌺",
-    "🌼",
-    "🌹"
-
+    "🌷",
+    "🌼"
 ];
 
 
-function createFlower() {
+function createPetal() {
 
-
-    const flower =
+    const petal =
         document.createElement("div");
 
 
-    flower.className =
+    petal.className =
         "flower";
 
 
-    flower.innerHTML =
-        flowers[
+    petal.innerHTML =
+        petals[
             Math.floor(
                 Math.random() *
-                flowers.length
+                petals.length
             )
         ];
 
 
-    flower.style.left =
+    petal.style.left =
         Math.random() * 100 + "vw";
 
 
-    flower.style.fontSize =
-        (12 + Math.random() * 12)
-        + "px";
+    petal.style.fontSize =
+        (10 + Math.random() * 10) + "px";
 
 
-    flower.style.animationDuration =
-        (7 + Math.random() * 7)
-        + "s";
+    petal.style.animationDuration =
+        (8 + Math.random() * 7) + "s";
 
 
     document.body.appendChild(
-        flower
+        petal
     );
 
 
     setTimeout(
-
         function() {
-
-            flower.remove();
-
+            petal.remove();
         },
-
-        15000
-
+        16000
     );
 
 }
 
 
 setInterval(
-    createFlower,
-    1200
+    createPetal,
+    1500
 );
 
-
 </script>
-
 
 </body>
 
