@@ -11,9 +11,7 @@
 <meta name="theme-color"
       content="#faf5fc">
 
-<title>
-Prapul Kumar ❤️ Sreeja | Wedding Invitation
-</title>
+<title>Prapul Kumar ❤️ Sreeja | Wedding Invitation</title>
 
 
 <style>
@@ -33,16 +31,24 @@ html {
 }
 
 body {
+
     margin: 0;
+
     background: #faf5fc;
+
     color: #63364f;
-    font-family: Georgia, "Times New Roman", serif;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
     overflow-x: hidden;
 }
 
 
 /* =====================================================
-   OPENING PAGE
+   OPENING SCREEN
 ===================================================== */
 
 #opening {
@@ -59,6 +65,8 @@ body {
 
     align-items: center;
 
+    overflow: hidden;
+
     background:
         linear-gradient(
             135deg,
@@ -66,8 +74,6 @@ body {
             #faf0fa,
             #f0e1f4
         );
-
-    overflow: hidden;
 
     transition:
         opacity 1.2s ease,
@@ -84,7 +90,9 @@ body {
 }
 
 
-/* Opening flowers */
+/* =====================================================
+   OPENING FLOWERS
+===================================================== */
 
 .open-flower {
 
@@ -92,7 +100,13 @@ body {
 
     pointer-events: none;
 
-    opacity: .75;
+    opacity: .70;
+
+    filter:
+        drop-shadow(
+            0 3px 5px
+            rgba(80,30,80,.08)
+        );
 
 }
 
@@ -149,7 +163,9 @@ body {
 }
 
 
-/* Opening content */
+/* =====================================================
+   OPENING CONTENT
+===================================================== */
 
 .opening-content {
 
@@ -168,7 +184,9 @@ body {
 }
 
 
-/* Om */
+/* =====================================================
+   OM
+===================================================== */
 
 .open-om {
 
@@ -181,7 +199,9 @@ body {
 }
 
 
-/* Sanskrit */
+/* =====================================================
+   SANSKRIT
+===================================================== */
 
 .open-sanskrit {
 
@@ -194,7 +214,9 @@ body {
 }
 
 
-/* Blessing */
+/* =====================================================
+   BLESSING
+===================================================== */
 
 .open-blessing {
 
@@ -209,7 +231,9 @@ body {
 }
 
 
-/* Opening title */
+/* =====================================================
+   OPENING TITLE
+===================================================== */
 
 .open-title {
 
@@ -229,7 +253,9 @@ body {
 }
 
 
-/* Opening names */
+/* =====================================================
+   OPENING NAMES
+===================================================== */
 
 .open-name {
 
@@ -260,7 +286,9 @@ body {
 }
 
 
-/* Opening date */
+/* =====================================================
+   OPENING DATE
+===================================================== */
 
 .open-date {
 
@@ -277,7 +305,9 @@ body {
 }
 
 
-/* Open button */
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
 
 .open-button {
 
@@ -287,7 +317,8 @@ body {
 
     min-height: 48px;
 
-    border: 1px solid #a98336;
+    border:
+        1px solid #a98336;
 
     border-radius: 30px;
 
@@ -295,7 +326,9 @@ body {
 
     color: white;
 
-    font-family: Georgia, serif;
+    font-family:
+        Georgia,
+        serif;
 
     font-size: 14px;
 
@@ -316,7 +349,8 @@ body {
 
     background: #a27a35;
 
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 
 }
 
@@ -351,7 +385,8 @@ body {
 
     text-align: center;
 
-    background: #faf5fc;
+    background:
+        #faf5fc;
 
     overflow: hidden;
 
@@ -359,7 +394,7 @@ body {
 
 
 /* =====================================================
-   REAL FLORAL BACKGROUND IMAGE
+   REAL FLORAL BACKGROUND
 ===================================================== */
 
 .floral-background {
@@ -378,7 +413,9 @@ body {
 
     object-fit: cover;
 
-    object-position: center center;
+    object-position: center top;
+
+    opacity: 1;
 
     z-index: 0;
 
@@ -390,7 +427,9 @@ body {
 
 
 /* =====================================================
-   LIGHT CENTER OVERLAY
+   VERY LIGHT CENTER HAZE
+   IMPORTANT:
+   THIS DOES NOT HIDE THE FLOWERS
 ===================================================== */
 
 .card::after {
@@ -402,12 +441,13 @@ body {
     inset: 0;
 
     background:
+
         radial-gradient(
             ellipse at center,
-            rgba(255,255,255,.88) 0%,
-            rgba(255,255,255,.70) 38%,
-            rgba(255,255,255,.40) 63%,
-            rgba(255,255,255,.08) 100%
+            rgba(255,255,255,.74) 0%,
+            rgba(255,255,255,.52) 35%,
+            rgba(255,255,255,.20) 58%,
+            rgba(255,255,255,0) 80%
         );
 
     z-index: 1;
@@ -418,7 +458,7 @@ body {
 
 
 /* =====================================================
-   GOLD BORDER
+   GOLD INNER BORDER
 ===================================================== */
 
 .card::before {
@@ -437,7 +477,7 @@ body {
 
     border:
         1px solid
-        rgba(170,125,47,.70);
+        rgba(170,125,47,.75);
 
     z-index: 5;
 
@@ -447,7 +487,7 @@ body {
 
 
 /* =====================================================
-   ALL CONTENT ABOVE FLORAL IMAGE
+   CONTENT
 ===================================================== */
 
 .invitation-content {
@@ -472,7 +512,10 @@ body {
     color: #a47729;
 
     animation:
-        floatGanesh 4s ease-in-out infinite;
+        floatGanesh
+        4s
+        ease-in-out
+        infinite;
 
 }
 
@@ -480,11 +523,17 @@ body {
 @keyframes floatGanesh {
 
     0%,100% {
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
     50% {
-        transform: translateY(-6px);
+
+        transform:
+            translateY(-6px);
+
     }
 
 }
@@ -616,7 +665,9 @@ body {
     color: #e92939;
 
     animation:
-        heartbeat 1.8s infinite;
+        heartbeat
+        1.8s
+        infinite;
 
 }
 
@@ -624,11 +675,17 @@ body {
 @keyframes heartbeat {
 
     0%,100% {
-        transform: scale(1);
+
+        transform:
+            scale(1);
+
     }
 
     50% {
-        transform: scale(1.12);
+
+        transform:
+            scale(1.12);
+
     }
 
 }
@@ -655,7 +712,8 @@ body {
 
     border-radius: 50%;
 
-    background: #ffffff;
+    background:
+        #ffffff;
 
     overflow: hidden;
 
@@ -694,6 +752,7 @@ body {
     margin: 28px auto;
 
     background:
+
         linear-gradient(
             to right,
             transparent,
@@ -783,7 +842,7 @@ body {
     padding: 11px 5px;
 
     background:
-        rgba(255,255,255,.82);
+        rgba(255,255,255,.84);
 
     border:
         1px solid
@@ -870,7 +929,7 @@ body {
 
 
 /* =====================================================
-   MAP BUTTON
+   MAP
 ===================================================== */
 
 .map {
@@ -888,7 +947,7 @@ body {
     border-radius: 28px;
 
     background:
-        rgba(255,255,255,.85);
+        rgba(255,255,255,.88);
 
     color: #762451;
 
@@ -903,11 +962,13 @@ body {
 
 .map:hover {
 
-    background: #762451;
+    background:
+        #762451;
 
     color: white;
 
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 
 }
 
@@ -948,7 +1009,7 @@ body {
     padding: 17px 30px;
 
     background:
-        rgba(255,255,255,.78);
+        rgba(255,255,255,.82);
 
     border:
         1px solid
@@ -1027,7 +1088,7 @@ body {
     padding: 6px;
 
     background:
-        rgba(255,255,255,.82);
+        rgba(255,255,255,.84);
 
     border:
         1px solid
@@ -1046,7 +1107,8 @@ body {
 
 .contact-card:hover {
 
-    transform: translateY(-4px);
+    transform:
+        translateY(-4px);
 
 }
 
@@ -1068,7 +1130,8 @@ body {
 
     border-radius: 25px;
 
-    background: #762451;
+    background:
+        #762451;
 
     color: white;
 
@@ -1083,7 +1146,8 @@ body {
 
 .contact:hover {
 
-    background: #a47732;
+    background:
+        #a47732;
 
 }
 
@@ -1155,7 +1219,8 @@ body {
     background:
         rgba(255,250,255,.96);
 
-    color: #762451;
+    color:
+        #762451;
 
     font-size: 22px;
 
@@ -1172,13 +1237,14 @@ body {
 
 .music:hover {
 
-    transform: scale(1.08);
+    transform:
+        scale(1.08);
 
 }
 
 
 /* =====================================================
-   FALLING PETALS
+   VERY LIGHT FALLING PETALS
 ===================================================== */
 
 .flower {
@@ -1218,6 +1284,7 @@ body {
 
 @media(max-width:600px) {
 
+
     .card {
 
         padding:
@@ -1239,6 +1306,11 @@ body {
     }
 
 
+    /*
+       IMPORTANT FOR YOUR PHONE:
+       Keep the floral image full height.
+    */
+
     .floral-background {
 
         width: 100%;
@@ -1247,7 +1319,8 @@ body {
 
         object-fit: cover;
 
-        object-position: center top;
+        object-position:
+            center top;
 
     }
 
@@ -1353,6 +1426,7 @@ body {
 
 @media(max-width:380px) {
 
+
     .open-title {
 
         font-size: 34px;
@@ -1437,7 +1511,9 @@ body {
 
 
         <div class="open-om">
+
             ॐ
+
         </div>
 
 
@@ -1489,6 +1565,7 @@ body {
         <div class="open-date">
 
             SUNDAY · 30 AUGUST 2026
+
             <br>
 
             MUHURTHAM · 11:09 AM
@@ -1512,7 +1589,7 @@ body {
 
 
 <!-- =====================================================
-     MUSIC
+     WEDDING MUSIC
 ===================================================== -->
 
 <audio
@@ -1552,7 +1629,7 @@ body {
 
 
         <!-- =================================================
-             REAL FLORAL BACKGROUND
+             REAL FLOWER IMAGE
         ================================================== -->
 
         <img
@@ -1564,13 +1641,11 @@ body {
 
 
         <!-- =================================================
-             ALL INVITATION CONTENT
+             INVITATION CONTENT
         ================================================== -->
 
         <div class="invitation-content">
 
-
-            <!-- GANESH -->
 
             <div class="ganesh">
 
@@ -1595,8 +1670,6 @@ body {
 
             </div>
 
-
-            <!-- TITLE -->
 
             <div class="title">
 
@@ -1867,9 +1940,11 @@ body {
                     <div class="family-name">
 
                         Sri Narender
+
                         <br>
 
                         &
+
                         <br>
 
                         Smt. Vijaya
@@ -1959,6 +2034,7 @@ body {
 
 
                 We joyfully invite you and your family
+
                 <br>
 
                 to celebrate our special day with us.
@@ -1968,6 +2044,7 @@ body {
 
 
                 Your presence and blessings
+
                 <br>
 
                 will make our wedding truly memorable.
@@ -2083,17 +2160,25 @@ function updateCountdown() {
 
     if (difference <= 0) {
 
-        document.getElementById("days")
+        document
+            .getElementById("days")
             .innerHTML = "00";
 
-        document.getElementById("hours")
+
+        document
+            .getElementById("hours")
             .innerHTML = "00";
 
-        document.getElementById("minutes")
+
+        document
+            .getElementById("minutes")
             .innerHTML = "00";
 
-        document.getElementById("seconds")
+
+        document
+            .getElementById("seconds")
             .innerHTML = "00";
+
 
         return;
 
@@ -2127,29 +2212,38 @@ function updateCountdown() {
         );
 
 
-    document.getElementById("days")
+    document
+        .getElementById("days")
         .innerHTML =
-        String(days).padStart(2, "0");
+        String(days)
+        .padStart(2, "0");
 
 
-    document.getElementById("hours")
+    document
+        .getElementById("hours")
         .innerHTML =
-        String(hours).padStart(2, "0");
+        String(hours)
+        .padStart(2, "0");
 
 
-    document.getElementById("minutes")
+    document
+        .getElementById("minutes")
         .innerHTML =
-        String(minutes).padStart(2, "0");
+        String(minutes)
+        .padStart(2, "0");
 
 
-    document.getElementById("seconds")
+    document
+        .getElementById("seconds")
         .innerHTML =
-        String(seconds).padStart(2, "0");
+        String(seconds)
+        .padStart(2, "0");
 
 }
 
 
 updateCountdown();
+
 
 setInterval(
     updateCountdown,
@@ -2158,13 +2252,15 @@ setInterval(
 
 
 /* =====================================================
-   VERY LIGHT FALLING PETALS
+   VERY LIGHT PETALS
 ===================================================== */
 
 const petals = [
+
     "🌸",
     "🌺",
     "🌷"
+
 ];
 
 
@@ -2192,11 +2288,13 @@ function createPetal() {
 
 
     petal.style.fontSize =
-        (9 + Math.random() * 8) + "px";
+        (9 + Math.random() * 8)
+        + "px";
 
 
     petal.style.animationDuration =
-        (9 + Math.random() * 6) + "s";
+        (9 + Math.random() * 6)
+        + "s";
 
 
     document.body.appendChild(
@@ -2205,12 +2303,15 @@ function createPetal() {
 
 
     setTimeout(
+
         function() {
 
             petal.remove();
 
         },
+
         16000
+
     );
 
 }
