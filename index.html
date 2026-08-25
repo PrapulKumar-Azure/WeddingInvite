@@ -15,6 +15,7 @@
 Prapul Kumar ❤️ Sreeja | Wedding Invitation
 </title>
 
+
 <style>
 
 /* =====================================================
@@ -32,22 +33,16 @@ html {
 }
 
 body {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+    margin: 0;
     background: #faf5fc;
-
-    color: #5d294e;
-
+    color: #63364f;
+    font-family: Georgia, "Times New Roman", serif;
     overflow-x: hidden;
 }
 
 
 /* =====================================================
-   OPENING SCREEN
+   OPENING PAGE
 ===================================================== */
 
 #opening {
@@ -64,15 +59,15 @@ body {
 
     align-items: center;
 
-    overflow: hidden;
-
     background:
         linear-gradient(
             135deg,
             #fffdf9,
-            #fbf2fb,
-            #f4e5f6
+            #faf0fa,
+            #f0e1f4
         );
+
+    overflow: hidden;
 
     transition:
         opacity 1.2s ease,
@@ -85,12 +80,11 @@ body {
     opacity: 0;
 
     visibility: hidden;
+
 }
 
 
-/* =====================================================
-   OPENING FLOWERS
-===================================================== */
+/* Opening flowers */
 
 .open-flower {
 
@@ -98,18 +92,18 @@ body {
 
     pointer-events: none;
 
-    opacity: .85;
+    opacity: .75;
 
 }
 
 
 .open-tl {
 
-    top: -35px;
+    top: -30px;
 
-    left: -25px;
+    left: -20px;
 
-    font-size: 95px;
+    font-size: 100px;
 
     transform: rotate(-15deg);
 
@@ -118,11 +112,11 @@ body {
 
 .open-tr {
 
-    top: -35px;
+    top: -30px;
 
-    right: -25px;
+    right: -20px;
 
-    font-size: 90px;
+    font-size: 95px;
 
     transform: rotate(15deg);
 
@@ -133,9 +127,9 @@ body {
 
     bottom: -30px;
 
-    left: -25px;
+    left: -20px;
 
-    font-size: 100px;
+    font-size: 105px;
 
     transform: rotate(15deg);
 
@@ -146,32 +140,31 @@ body {
 
     bottom: -30px;
 
-    right: -25px;
+    right: -20px;
 
-    font-size: 100px;
+    font-size: 105px;
 
     transform: rotate(-15deg);
 
 }
 
 
-/* =====================================================
-   OPENING CONTENT
-===================================================== */
+/* Opening content */
 
 .opening-content {
-
-    width: 92%;
-
-    max-width: 620px;
-
-    text-align: center;
 
     position: relative;
 
     z-index: 5;
 
+    width: 92%;
+
+    max-width: 600px;
+
+    text-align: center;
+
     padding: 20px;
+
 }
 
 
@@ -179,11 +172,11 @@ body {
 
 .open-om {
 
-    font-size: 68px;
+    font-size: 70px;
 
-    color: #9b6b25;
+    color: #a47b2d;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
 }
 
@@ -194,9 +187,9 @@ body {
 
     font-size: 19px;
 
-    color: #743c60;
+    color: #713d5b;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 
 }
 
@@ -205,69 +198,69 @@ body {
 
 .open-blessing {
 
-    font-size: 16px;
+    font-size: 17px;
 
     line-height: 1.7;
 
-    color: #704c61;
+    color: #704b5f;
 
     font-style: italic;
 
 }
 
 
-/* Title */
+/* Opening title */
 
 .open-title {
 
-    margin-top: 22px;
+    margin-top: 25px;
 
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size: 52px;
+    font-size: 50px;
 
     font-weight: normal;
 
-    color: #762451;
+    color: #752451;
 
 }
 
 
-/* Names */
+/* Opening names */
 
 .open-name {
+
+    margin-top: 12px;
 
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size: 47px;
+    font-size: 46px;
 
-    color: #762451;
-
-    margin-top: 13px;
+    color: #752451;
 
 }
 
 
 .open-and {
 
-    color: #ae8234;
+    margin: 3px 0;
 
-    font-size: 21px;
+    color: #a77d2d;
+
+    font-size: 20px;
 
     font-style: italic;
-
-    margin: 2px 0;
 
 }
 
 
-/* Date */
+/* Opening date */
 
 .open-date {
 
@@ -275,32 +268,34 @@ body {
 
     font-size: 14px;
 
-    letter-spacing: 2px;
-
     line-height: 1.8;
 
-    color: #744d60;
+    letter-spacing: 2px;
+
+    color: #714d60;
 
 }
 
 
-/* =====================================================
-   OPEN BUTTON
-===================================================== */
+/* Open button */
 
 .open-button {
 
-    margin-top: 27px;
+    margin-top: 28px;
 
-    padding: 13px 34px;
+    padding: 13px 32px;
 
-    border: 1px solid #b28a3d;
+    min-height: 48px;
+
+    border: 1px solid #a98336;
 
     border-radius: 30px;
 
-    background: #762451;
+    background: #752451;
 
     color: white;
+
+    font-family: Georgia, serif;
 
     font-size: 14px;
 
@@ -321,13 +316,13 @@ body {
 
     background: #a27a35;
 
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
 }
 
 
 /* =====================================================
-   MAIN PAGE
+   MAIN CONTAINER
 ===================================================== */
 
 .container {
@@ -340,7 +335,7 @@ body {
 
 
 /* =====================================================
-   REAL FLORAL INVITATION
+   MAIN CARD
 ===================================================== */
 
 .card {
@@ -352,34 +347,50 @@ body {
     min-height: 100vh;
 
     padding:
-        70px 14% 75px;
+        65px 13% 80px;
 
     text-align: center;
 
-    background:
-
-        linear-gradient(
-            rgba(252,247,253,.72),
-            rgba(252,247,253,.72)
-        ),
-
-        url("purple-floral-background.png");
-
-    background-position:
-        center top;
-
-    background-repeat:
-        no-repeat;
-
-    background-size:
-        cover;
+    background: #faf5fc;
 
     overflow: hidden;
+
 }
 
 
 /* =====================================================
-   SOFT WHITE CENTER
+   REAL FLORAL BACKGROUND IMAGE
+===================================================== */
+
+.floral-background {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    user-select: none;
+
+}
+
+
+/* =====================================================
+   LIGHT CENTER OVERLAY
 ===================================================== */
 
 .card::after {
@@ -391,23 +402,23 @@ body {
     inset: 0;
 
     background:
-
         radial-gradient(
             ellipse at center,
-            rgba(255,255,255,.92) 5%,
-            rgba(255,255,255,.70) 42%,
-            rgba(255,255,255,.20) 78%,
-            transparent 100%
+            rgba(255,255,255,.88) 0%,
+            rgba(255,255,255,.70) 38%,
+            rgba(255,255,255,.40) 63%,
+            rgba(255,255,255,.08) 100%
         );
+
+    z-index: 1;
 
     pointer-events: none;
 
-    z-index: 0;
 }
 
 
 /* =====================================================
-   GOLD INNER BORDER
+   GOLD BORDER
 ===================================================== */
 
 .card::before {
@@ -416,25 +427,37 @@ body {
 
     position: absolute;
 
-    inset: 20px;
+    top: 18px;
+
+    left: 18px;
+
+    right: 18px;
+
+    bottom: 18px;
 
     border:
         1px solid
-        rgba(170,125,42,.55);
+        rgba(170,125,47,.70);
+
+    z-index: 5;
 
     pointer-events: none;
 
-    z-index: 5;
 }
 
 
-/* Keep content above background */
+/* =====================================================
+   ALL CONTENT ABOVE FLORAL IMAGE
+===================================================== */
 
-.card > * {
+.invitation-content {
 
     position: relative;
 
-    z-index: 2;
+    z-index: 3;
+
+    width: 100%;
+
 }
 
 
@@ -446,7 +469,7 @@ body {
 
     font-size: 68px;
 
-    color: #9d702c;
+    color: #a47729;
 
     animation:
         floatGanesh 4s ease-in-out infinite;
@@ -477,7 +500,7 @@ body {
 
     font-size: 18px;
 
-    color: #6e3c58;
+    color: #6e3d58;
 
     letter-spacing: 2px;
 
@@ -492,7 +515,7 @@ body {
 
     line-height: 1.7;
 
-    color: #70485e;
+    color: #70495d;
 
     font-style: italic;
 
@@ -500,7 +523,7 @@ body {
 
 
 /* =====================================================
-   MAIN TITLE
+   TITLE
 ===================================================== */
 
 .title {
@@ -512,11 +535,13 @@ body {
         "Segoe Script",
         cursive;
 
-    font-size: 57px;
+    font-size: 56px;
 
     font-weight: normal;
 
-    color: #741f51;
+    color: #74204f;
+
+    line-height: 1.2;
 
 }
 
@@ -533,9 +558,9 @@ body {
 
     line-height: 1.8;
 
-    color: #633c52;
-
     letter-spacing: 1px;
+
+    color: #633c51;
 
 }
 
@@ -558,35 +583,37 @@ body {
         "Segoe Script",
         cursive;
 
-    font-size: 60px;
+    font-size: 58px;
+
+    font-weight: normal;
 
     color: #762451;
 
-    font-weight: normal;
+    line-height: 1.25;
 
 }
 
 
 .and {
 
+    margin: 3px 0;
+
     font-size: 21px;
 
-    color: #a4782d;
+    color: #a3782d;
 
     font-style: italic;
-
-    margin: 2px 0;
 
 }
 
 
 .heart {
 
-    font-size: 32px;
-
     margin-top: 8px;
 
-    color: #a43872;
+    font-size: 42px;
+
+    color: #e92939;
 
     animation:
         heartbeat 1.8s infinite;
@@ -601,7 +628,7 @@ body {
     }
 
     50% {
-        transform: scale(1.13);
+        transform: scale(1.12);
     }
 
 }
@@ -628,7 +655,7 @@ body {
 
     border-radius: 50%;
 
-    background: #fff;
+    background: #ffffff;
 
     overflow: hidden;
 
@@ -644,6 +671,8 @@ body {
     width: 100%;
 
     height: 100%;
+
+    display: block;
 
     object-fit: cover;
 
@@ -665,7 +694,6 @@ body {
     margin: 28px auto;
 
     background:
-
         linear-gradient(
             to right,
             transparent,
@@ -721,16 +749,16 @@ body {
 
 .countdown-title {
 
+    margin-bottom: 17px;
+
     font-family:
         "Brush Script MT",
         "Segoe Script",
         cursive;
 
-    font-size: 32px;
+    font-size: 31px;
 
     color: #762451;
-
-    margin-bottom: 17px;
 
 }
 
@@ -755,7 +783,7 @@ body {
     padding: 11px 5px;
 
     background:
-        rgba(255,255,255,.80);
+        rgba(255,255,255,.82);
 
     border:
         1px solid
@@ -842,7 +870,7 @@ body {
 
 
 /* =====================================================
-   MAP
+   MAP BUTTON
 ===================================================== */
 
 .map {
@@ -860,7 +888,7 @@ body {
     border-radius: 28px;
 
     background:
-        rgba(255,255,255,.80);
+        rgba(255,255,255,.85);
 
     color: #762451;
 
@@ -890,6 +918,8 @@ body {
 
 .family-title {
 
+    margin-bottom: 18px;
+
     font-family:
         "Brush Script MT",
         "Segoe Script",
@@ -898,8 +928,6 @@ body {
     font-size: 31px;
 
     color: #762451;
-
-    margin-bottom: 18px;
 
 }
 
@@ -920,7 +948,7 @@ body {
     padding: 17px 30px;
 
     background:
-        rgba(255,255,255,.70);
+        rgba(255,255,255,.78);
 
     border:
         1px solid
@@ -937,13 +965,13 @@ body {
 
 .family-heading {
 
+    margin-bottom: 7px;
+
     font-size: 17px;
 
     color: #a0762f;
 
     font-weight: bold;
-
-    margin-bottom: 7px;
 
 }
 
@@ -965,6 +993,8 @@ body {
 
 .contact-title {
 
+    margin-bottom: 20px;
+
     font-family:
         "Brush Script MT",
         "Segoe Script",
@@ -974,8 +1004,6 @@ body {
 
     color: #762451;
 
-    margin-bottom: 20px;
-
 }
 
 
@@ -984,6 +1012,8 @@ body {
     display: flex;
 
     justify-content: center;
+
+    align-items: center;
 
     gap: 18px;
 
@@ -997,11 +1027,11 @@ body {
     padding: 6px;
 
     background:
-        rgba(255,255,255,.75);
+        rgba(255,255,255,.82);
 
     border:
         1px solid
-        rgba(150,110,160,.4);
+        rgba(150,110,160,.40);
 
     border-radius: 30px;
 
@@ -1016,8 +1046,7 @@ body {
 
 .contact-card:hover {
 
-    transform:
-        translateY(-4px);
+    transform: translateY(-4px);
 
 }
 
@@ -1039,8 +1068,7 @@ body {
 
     border-radius: 25px;
 
-    background:
-        #762451;
+    background: #762451;
 
     color: white;
 
@@ -1055,8 +1083,7 @@ body {
 
 .contact:hover {
 
-    background:
-        #a47732;
+    background: #a47732;
 
 }
 
@@ -1069,7 +1096,7 @@ body {
 
 
 /* =====================================================
-   FINAL MESSAGE
+   FOOTER
 ===================================================== */
 
 .footer {
@@ -1128,8 +1155,7 @@ body {
     background:
         rgba(255,250,255,.96);
 
-    color:
-        #762451;
+    color: #762451;
 
     font-size: 22px;
 
@@ -1165,7 +1191,7 @@ body {
 
     pointer-events: none;
 
-    opacity: .35;
+    opacity: .28;
 
     animation:
         falling linear forwards;
@@ -1192,24 +1218,36 @@ body {
 
 @media(max-width:600px) {
 
-
     .card {
 
         padding:
-            55px 22px 65px;
-
-        background-size:
-            auto 100%;
-
-        background-attachment:
-            scroll;
+            55px 25px 70px;
 
     }
 
 
     .card::before {
 
-        inset: 11px;
+        top: 10px;
+
+        left: 10px;
+
+        right: 10px;
+
+        bottom: 10px;
+
+    }
+
+
+    .floral-background {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center top;
 
     }
 
@@ -1315,7 +1353,6 @@ body {
 
 @media(max-width:380px) {
 
-
     .open-title {
 
         font-size: 34px;
@@ -1370,7 +1407,7 @@ body {
 
 
 <!-- =====================================================
-     OPENING PAGE
+     OPENING SCREEN
 ===================================================== -->
 
 <div id="opening">
@@ -1461,6 +1498,7 @@ body {
 
         <button
             class="open-button"
+            type="button"
             onclick="openInvitation()">
 
             ✨ TAP TO OPEN ✨
@@ -1474,7 +1512,7 @@ body {
 
 
 <!-- =====================================================
-     WEDDING SONG
+     MUSIC
 ===================================================== -->
 
 <audio
@@ -1495,6 +1533,7 @@ body {
 <button
     class="music"
     id="musicButton"
+    type="button"
     onclick="toggleMusic()">
 
     🎵
@@ -1509,423 +1548,444 @@ body {
 <div class="container">
 
 
-<div class="card">
+    <div class="card">
 
 
-    <!-- =================================================
-         GANESH
-    ================================================== -->
-
-    <div class="ganesh">
-        ॐ
-    </div>
-
-
-    <div class="heading">
-
-        ॥ श्री गणेशाय नमः ॥
-
-    </div>
-
-
-    <div class="subtitle">
-
-        With the blessings of Almighty
-        <br>
-
-        and our beloved elders
-
-    </div>
-
-
-    <!-- TITLE -->
-
-    <div class="title">
-
-        Wedding Invitation
-
-    </div>
-
-
-    <div class="intro">
-
-        YOU ARE CORDIALLY INVITED TO
-        <br>
-
-        THE WEDDING CEREMONY OF
-
-    </div>
-
-
-    <!-- =================================================
-         NAMES
-    ================================================== -->
-
-    <div class="names">
-
-
-        <div class="name">
-
-            Prapul Kumar
-
-        </div>
-
-
-        <div class="and">
-
-            — and —
-
-        </div>
-
-
-        <div class="name">
-
-            Sreeja
-
-        </div>
-
-
-        <div class="heart">
-
-            ♥️
-
-        </div>
-
-
-    </div>
-
-
-    <!-- =================================================
-         COUPLE PHOTO
-    ================================================== -->
-
-    <div class="photo">
+        <!-- =================================================
+             REAL FLORAL BACKGROUND
+        ================================================== -->
 
         <img
-            src="Picsart_26-08-25_22-05-08-389.png"
-            alt="Prapul Kumar and Sreeja">
-
-    </div>
-
-
-    <div class="divider"></div>
+            class="floral-background"
+            src="purple-floral-background.png"
+            alt=""
+            aria-hidden="true"
+        >
 
 
-    <!-- =================================================
-         DATE
-    ================================================== -->
+        <!-- =================================================
+             ALL INVITATION CONTENT
+        ================================================== -->
 
-    <div class="day">
-
-        SUNDAY
-
-    </div>
+        <div class="invitation-content">
 
 
-    <div class="date">
+            <!-- GANESH -->
 
-        30 AUGUST 2026
+            <div class="ganesh">
 
-    </div>
-
-
-    <div class="time">
-
-        ✦ MUHURTHAM : 11:09 AM ✦
-
-    </div>
-
-
-    <div class="divider"></div>
-
-
-    <!-- =================================================
-         COUNTDOWN
-    ================================================== -->
-
-    <div class="countdown-title">
-
-        Our Special Day
-
-    </div>
-
-
-    <div class="countdown">
-
-
-        <div class="count-box">
-
-            <div
-                class="count-number"
-                id="days">
-
-                00
+                ॐ
 
             </div>
 
-            <div class="count-label">
 
-                DAYS
+            <div class="heading">
 
-            </div>
-
-        </div>
-
-
-        <div class="count-box">
-
-            <div
-                class="count-number"
-                id="hours">
-
-                00
-
-            </div>
-
-            <div class="count-label">
-
-                HOURS
-
-            </div>
-
-        </div>
-
-
-        <div class="count-box">
-
-            <div
-                class="count-number"
-                id="minutes">
-
-                00
-
-            </div>
-
-            <div class="count-label">
-
-                MINUTES
-
-            </div>
-
-        </div>
-
-
-        <div class="count-box">
-
-            <div
-                class="count-number"
-                id="seconds">
-
-                00
-
-            </div>
-
-            <div class="count-label">
-
-                SECONDS
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-    <div class="divider"></div>
-
-
-    <!-- =================================================
-         VENUE
-    ================================================== -->
-
-    <div class="venue-title">
-
-        ✦ Wedding Venue ✦
-
-    </div>
-
-
-    <div class="venue">
-
-        Viola Garden
-
-    </div>
-
-
-    <div class="address">
-
-        Kushal Nagar,
-        <br>
-
-        Hanamkonda Road,
-        <br>
-
-        Siddipet – 502103
-
-    </div>
-
-
-    <a
-        class="map"
-
-        href="https://www.google.com/maps/search/?api=1&query=Viola+Garden+Kushal+Nagar+Hanamkonda+Road+Siddipet+502103"
-
-        target="_blank">
-
-        📍 Open Google Maps
-
-    </a>
-
-
-    <div class="divider"></div>
-
-
-    <!-- =================================================
-         FAMILY
-         ONLY GROOM FAMILY
-    ================================================== -->
-
-    <div class="family-title">
-
-        With Love & Blessings From
-
-    </div>
-
-
-    <div class="family">
-
-
-        <div class="family-box">
-
-
-            <div class="family-heading">
-
-                Groom's Family
+                ॥ श्री गणेशाय नमः ॥
 
             </div>
 
 
-            <div class="family-name">
+            <div class="subtitle">
 
-                Sri Narender
+                With the blessings of Almighty
                 <br>
 
-                &
-                <br>
-
-                Smt. Vijaya
+                and our beloved elders
 
             </div>
 
 
-        </div>
+            <!-- TITLE -->
+
+            <div class="title">
+
+                Wedding Invitation
+
+            </div>
 
 
-    </div>
+            <div class="intro">
+
+                YOU ARE CORDIALLY INVITED TO
+                <br>
+
+                THE WEDDING CEREMONY OF
+
+            </div>
 
 
-    <div class="divider"></div>
+            <!-- =================================================
+                 NAMES
+            ================================================== -->
+
+            <div class="names">
 
 
-    <!-- =================================================
-         CONTACT
-    ================================================== -->
+                <div class="name">
 
-    <div class="contact-title">
+                    Prapul Kumar
 
-        📞 Contact
-
-    </div>
+                </div>
 
 
-    <div class="contacts">
+                <div class="and">
+
+                    — and —
+
+                </div>
 
 
-        <div class="contact-card">
+                <div class="name">
+
+                    Sreeja
+
+                </div>
+
+
+                <div class="heart">
+
+                    ❤️
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 COUPLE PHOTO
+            ================================================== -->
+
+            <div class="photo">
+
+                <img
+                    src="Picsart_26-08-25_22-05-08-389.png"
+                    alt="Prapul Kumar and Sreeja"
+                >
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- =================================================
+                 DATE
+            ================================================== -->
+
+            <div class="day">
+
+                SUNDAY
+
+            </div>
+
+
+            <div class="date">
+
+                30 AUGUST 2026
+
+            </div>
+
+
+            <div class="time">
+
+                ✦ MUHURTHAM : 11:09 AM ✦
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- =================================================
+                 COUNTDOWN
+            ================================================== -->
+
+            <div class="countdown-title">
+
+                Our Special Day
+
+            </div>
+
+
+            <div class="countdown">
+
+
+                <div class="count-box">
+
+                    <div
+                        class="count-number"
+                        id="days">
+
+                        00
+
+                    </div>
+
+                    <div class="count-label">
+
+                        DAYS
+
+                    </div>
+
+                </div>
+
+
+                <div class="count-box">
+
+                    <div
+                        class="count-number"
+                        id="hours">
+
+                        00
+
+                    </div>
+
+                    <div class="count-label">
+
+                        HOURS
+
+                    </div>
+
+                </div>
+
+
+                <div class="count-box">
+
+                    <div
+                        class="count-number"
+                        id="minutes">
+
+                        00
+
+                    </div>
+
+                    <div class="count-label">
+
+                        MINUTES
+
+                    </div>
+
+                </div>
+
+
+                <div class="count-box">
+
+                    <div
+                        class="count-number"
+                        id="seconds">
+
+                        00
+
+                    </div>
+
+                    <div class="count-label">
+
+                        SECONDS
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- =================================================
+                 VENUE
+            ================================================== -->
+
+            <div class="venue-title">
+
+                ✦ Wedding Venue ✦
+
+            </div>
+
+
+            <div class="venue">
+
+                Viola Garden
+
+            </div>
+
+
+            <div class="address">
+
+                Kushal Nagar,
+                <br>
+
+                Hanamkonda Road,
+                <br>
+
+                Siddipet – 502103
+
+            </div>
+
 
             <a
-                class="contact"
-                href="tel:9885114423">
+                class="map"
 
-                <span class="phone-icon">
-                    📱
-                </span>
+                href="https://www.google.com/maps/search/?api=1&query=Viola+Garden+Kushal+Nagar+Hanamkonda+Road+Siddipet+502103"
 
-                9885114423
+                target="_blank">
+
+                📍 Open Google Maps
 
             </a>
 
+
+            <div class="divider"></div>
+
+
+            <!-- =================================================
+                 GROOM FAMILY ONLY
+            ================================================== -->
+
+            <div class="family-title">
+
+                With Love & Blessings From
+
+            </div>
+
+
+            <div class="family">
+
+
+                <div class="family-box">
+
+
+                    <div class="family-heading">
+
+                        Groom's Family
+
+                    </div>
+
+
+                    <div class="family-name">
+
+                        Sri Narender
+                        <br>
+
+                        &
+                        <br>
+
+                        Smt. Vijaya
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- =================================================
+                 CONTACT
+            ================================================== -->
+
+            <div class="contact-title">
+
+                📞 Contact
+
+            </div>
+
+
+            <div class="contacts">
+
+
+                <div class="contact-card">
+
+                    <a
+                        class="contact"
+                        href="tel:9885114423">
+
+                        <span class="phone-icon">
+                            📱
+                        </span>
+
+                        9885114423
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <a
+                        class="contact"
+                        href="tel:7893725737">
+
+                        <span class="phone-icon">
+                            📱
+                        </span>
+
+                        7893725737
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <!-- =================================================
+                 FINAL MESSAGE
+            ================================================== -->
+
+            <div class="footer">
+
+
+                <em>
+
+                    Two hearts, two families,
+                    one beautiful beginning...
+
+                </em>
+
+
+                <br><br>
+
+
+                We joyfully invite you and your family
+                <br>
+
+                to celebrate our special day with us.
+
+
+                <br><br>
+
+
+                Your presence and blessings
+                <br>
+
+                will make our wedding truly memorable.
+
+
+                <div class="footer-names">
+
+                    Prapul Kumar ❤️ Sreeja
+
+                </div>
+
+
+            </div>
+
+
         </div>
-
-
-        <div class="contact-card">
-
-            <a
-                class="contact"
-                href="tel:7893725737">
-
-                <span class="phone-icon">
-                    📱
-                </span>
-
-                7893725737
-
-            </a>
-
-        </div>
-
 
     </div>
-
-
-    <div class="divider"></div>
-
-
-    <!-- =================================================
-         FINAL MESSAGE
-    ================================================== -->
-
-    <div class="footer">
-
-
-        <em>
-
-            Two hearts, two families,
-            one beautiful beginning...
-
-        </em>
-
-
-        <br><br>
-
-
-        We joyfully invite you and your family
-        <br>
-
-        to celebrate our special day with us.
-
-
-        <br><br>
-
-
-        Your presence and blessings
-        <br>
-
-        will make our wedding truly memorable.
-
-
-        <div class="footer-names">
-
-            Prapul Kumar ❤️ Sreeja
-
-        </div>
-
-
-    </div>
-
-
-</div>
 
 </div>
 
@@ -1970,7 +2030,7 @@ function openInvitation() {
 
 
 /* =====================================================
-   MUSIC
+   MUSIC CONTROL
 ===================================================== */
 
 function toggleMusic() {
@@ -2069,28 +2129,27 @@ function updateCountdown() {
 
     document.getElementById("days")
         .innerHTML =
-        String(days).padStart(2,"0");
+        String(days).padStart(2, "0");
 
 
     document.getElementById("hours")
         .innerHTML =
-        String(hours).padStart(2,"0");
+        String(hours).padStart(2, "0");
 
 
     document.getElementById("minutes")
         .innerHTML =
-        String(minutes).padStart(2,"0");
+        String(minutes).padStart(2, "0");
 
 
     document.getElementById("seconds")
         .innerHTML =
-        String(seconds).padStart(2,"0");
+        String(seconds).padStart(2, "0");
 
 }
 
 
 updateCountdown();
-
 
 setInterval(
     updateCountdown,
@@ -2099,14 +2158,13 @@ setInterval(
 
 
 /* =====================================================
-   FALLING FLOWERS
+   VERY LIGHT FALLING PETALS
 ===================================================== */
 
 const petals = [
     "🌸",
     "🌺",
-    "🌷",
-    "🌼"
+    "🌷"
 ];
 
 
@@ -2134,11 +2192,11 @@ function createPetal() {
 
 
     petal.style.fontSize =
-        (10 + Math.random() * 10) + "px";
+        (9 + Math.random() * 8) + "px";
 
 
     petal.style.animationDuration =
-        (8 + Math.random() * 7) + "s";
+        (9 + Math.random() * 6) + "s";
 
 
     document.body.appendChild(
@@ -2148,7 +2206,9 @@ function createPetal() {
 
     setTimeout(
         function() {
+
             petal.remove();
+
         },
         16000
     );
@@ -2158,7 +2218,7 @@ function createPetal() {
 
 setInterval(
     createPetal,
-    1500
+    1800
 );
 
 </script>
