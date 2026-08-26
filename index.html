@@ -12,8 +12,9 @@
 
 <title>Prapul Kumar ❤️ Sreeja | Wedding Invitation</title>
 
+
 <!-- =====================================================
-     WHATSAPP / FACEBOOK / SOCIAL LINK PREVIEW
+     SOCIAL MEDIA / WHATSAPP PREVIEW
 ===================================================== -->
 
 <meta property="og:type" content="website">
@@ -46,10 +47,6 @@
       content="Prapul Kumar & Sreeja Wedding">
 
 
-<!-- =====================================================
-     TWITTER / X PREVIEW
-===================================================== -->
-
 <meta name="twitter:card"
       content="summary_large_image">
 
@@ -62,10 +59,6 @@
 <meta name="twitter:image"
       content="https://prapulkumar-azure.github.io/WeddingInvite/preview.png">
 
-
-<!-- =====================================================
-     FAVICON / PREVIEW
-===================================================== -->
 
 <link rel="icon"
       type="image/png"
@@ -248,10 +241,6 @@ body {
 }
 
 
-/* =====================================================
-   OPENING OM
-===================================================== */
-
 .open-om {
 
     font-size: 70px;
@@ -263,10 +252,6 @@ body {
 }
 
 
-/* =====================================================
-   OPENING SANSKRIT
-===================================================== */
-
 .open-sanskrit {
 
     font-size: 18px;
@@ -277,10 +262,6 @@ body {
 
 }
 
-
-/* =====================================================
-   OPENING BLESSING
-===================================================== */
 
 .open-blessing {
 
@@ -296,8 +277,7 @@ body {
 
 
 /* =====================================================
-   OPENING TITLE
-   ALWAYS SAME LINE
+   OPENING TITLE - SAME LINE
 ===================================================== */
 
 .open-title {
@@ -328,10 +308,6 @@ body {
 }
 
 
-/* =====================================================
-   OPENING NAMES
-===================================================== */
-
 .open-name {
 
     margin-top: 13px;
@@ -360,10 +336,6 @@ body {
 
 }
 
-
-/* =====================================================
-   OPENING DATE
-===================================================== */
 
 .open-date {
 
@@ -959,6 +931,7 @@ body {
 
 /* =====================================================
    FAMILY PAGE
+   FULL IMAGE - NO CROPPING
 ===================================================== */
 
 .family-title {
@@ -977,13 +950,22 @@ body {
 }
 
 
+/*
+   IMPORTANT:
+   No fixed height.
+   The image keeps its original aspect ratio.
+*/
+
 .family-photo {
 
-    width: 210px;
+    width: 100%;
 
-    height: 210px;
+    max-width: 360px;
 
-    margin: 0 auto 20px;
+    height: auto;
+
+    margin:
+        0 auto 20px;
 
     border-radius: 18px;
 
@@ -993,27 +975,45 @@ body {
         2px solid
         rgba(165,120,40,.75);
 
-    background: white;
+    background:
+        rgba(255,255,255,.92);
 
     box-shadow:
         0 8px 25px
         rgba(80,30,70,.16);
 
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
 }
 
+
+/*
+   IMPORTANT:
+   object-fit: contain prevents cropping.
+*/
 
 .family-photo img {
 
     width: 100%;
 
-    height: 100%;
+    height: auto;
 
-    object-fit: cover;
+    max-height: 360px;
 
     display: block;
 
+    object-fit: contain;
+
 }
 
+
+/* =====================================================
+   FAMILY BOX
+===================================================== */
 
 .family-box {
 
@@ -1207,16 +1207,12 @@ body {
 
 
 .prev {
-
     left: 10px;
-
 }
 
 
 .next {
-
     right: 10px;
-
 }
 
 
@@ -1310,7 +1306,7 @@ body {
 
 
 /* =====================================================
-   MUSIC BUTTON
+   MUSIC
 ===================================================== */
 
 .music {
@@ -1349,7 +1345,7 @@ body {
 
 
 /* =====================================================
-   REALISTIC FALLING FLOWERS
+   FALLING FLOWERS
 ===================================================== */
 
 .falling-flower {
@@ -1385,29 +1381,19 @@ body {
 
 
 .falling-flower.small {
-
     width: 22px;
-
 }
 
 
 .falling-flower.medium {
-
     width: 32px;
-
 }
 
 
 .falling-flower.large {
-
     width: 43px;
-
 }
 
-
-/* =====================================================
-   FLOWER FALL
-===================================================== */
 
 @keyframes realFlowerFall {
 
@@ -1428,9 +1414,7 @@ body {
 
 
     10% {
-
         opacity: .82;
-
     }
 
 
@@ -1526,23 +1510,17 @@ body {
 
 
     .om {
-
         font-size: 55px;
-
     }
 
 
     .script-title {
-
         font-size: 43px;
-
     }
 
 
     .big-name {
-
         font-size: 47px;
-
     }
 
 
@@ -1557,33 +1535,53 @@ body {
     }
 
 
+    /*
+       FAMILY PHOTO:
+       FULL WIDTH,
+       AUTO HEIGHT,
+       NO CROPPING
+    */
+
     .family-photo {
 
-        width: 175px;
+        width: 92%;
 
-        height: 175px;
+        max-width: 360px;
+
+        height: auto;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .family-photo img {
+
+        width: 100%;
+
+        height: auto;
+
+        max-height: 300px;
+
+        object-fit: contain;
 
     }
 
 
     .date {
-
         font-size: 32px;
-
     }
 
 
     .venue {
-
         font-size: 39px;
-
     }
 
 
     .final-names {
-
         font-size: 35px;
-
     }
 
 
@@ -1601,51 +1599,37 @@ body {
 
 
     .falling-flower.small {
-
         width: 18px;
-
     }
 
 
     .falling-flower.medium {
-
         width: 27px;
-
     }
 
 
     .falling-flower.large {
-
         width: 36px;
-
     }
 
 
     .open-title {
-
         font-size: 34px;
-
     }
 
 
     .open-name {
-
         font-size: 39px;
-
     }
 
 
     .open-om {
-
         font-size: 58px;
-
     }
 
 
     .open-blessing {
-
         font-size: 14px;
-
     }
 
 }
@@ -1658,30 +1642,22 @@ body {
 @media(max-width:380px) {
 
     .open-title {
-
         font-size: 30px;
-
     }
 
 
     .open-name {
-
         font-size: 34px;
-
     }
 
 
     .script-title {
-
         font-size: 37px;
-
     }
 
 
     .big-name {
-
         font-size: 41px;
-
     }
 
 
@@ -1696,17 +1672,22 @@ body {
 
     .family-photo {
 
-        width: 155px;
+        width: 90%;
 
-        height: 155px;
+        max-width: 330px;
+
+    }
+
+
+    .family-photo img {
+
+        max-height: 250px;
 
     }
 
 
     .date {
-
         font-size: 28px;
-
     }
 
 }
@@ -1765,12 +1746,11 @@ body {
 
             With the blessings of Almighty
             <br>
+
             and our beloved elders
 
         </div>
 
-
-        <!-- SAME LINE -->
 
         <div class="open-title">
 
@@ -1827,7 +1807,7 @@ body {
 
 
 <!-- =====================================================
-     NEW WEDDING SONG
+     WEDDING SONG
 ===================================================== -->
 
 <audio
@@ -2059,6 +2039,7 @@ body {
 
             <div class="countdown">
 
+
                 <div class="count-box">
 
                     <div
@@ -2126,6 +2107,7 @@ body {
 
                 </div>
 
+
             </div>
 
         </div>
@@ -2134,7 +2116,7 @@ body {
 
 
     <!-- =================================================
-         PAGE 4
+         PAGE 4 — VENUE
     ================================================== -->
 
     <section class="slide">
@@ -2204,8 +2186,9 @@ body {
 
 
     <!-- =================================================
-         PAGE 5 — WITH LOVE & BLESSINGS
-    ================================================== -->
+         PAGE 5 — FAMILY
+         FULL FAMILY IMAGE
+===================================================== -->
 
     <section class="slide">
 
@@ -2223,13 +2206,17 @@ body {
             </div>
 
 
-            <!-- FAMILY IMAGE -->
+            <!--
+                FAMILY IMAGE
+                Original aspect ratio is preserved.
+                No cropping.
+            -->
 
             <div class="family-photo">
 
                 <img
                     src="file_000000005c3c82119bfc73425bedac19.png"
-                    alt="Family">
+                    alt="Groom Family">
 
             </div>
 
@@ -2278,7 +2265,7 @@ body {
 
     <!-- =================================================
          PAGE 6 — CONTACT
-    ================================================== -->
+===================================================== -->
 
     <section class="slide">
 
@@ -2330,7 +2317,7 @@ body {
 
     <!-- =================================================
          PAGE 7 — THANK YOU
-    ================================================== -->
+===================================================== -->
 
     <section class="slide">
 
@@ -2396,6 +2383,7 @@ body {
         </div>
 
     </section>
+
 
 </div>
 
@@ -2581,7 +2569,7 @@ window.addEventListener(
 
 
 /* =====================================================
-   STOP MUSIC WHEN TAB BECOMES HIDDEN
+   STOP MUSIC WHEN TAB IS HIDDEN
 ===================================================== */
 
 document.addEventListener(
@@ -2960,7 +2948,7 @@ function handleSwipe() {
 
 
 /* =====================================================
-   REAL FLOWERS
+   REALISTIC ROSE + PURPLE FLOWERS
 ===================================================== */
 
 const flowerImages = [
